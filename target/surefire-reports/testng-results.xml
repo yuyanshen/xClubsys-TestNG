@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="16" ignored="0" total="19" passed="3">
+<testng-results skipped="0" failed="17" ignored="0" total="19" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="123976" started-at="2019-07-19T06:09:01Z" finished-at="2019-07-19T06:11:05Z">
+  <suite name="Surefire suite" duration-ms="162546" started-at="2019-07-19T06:36:00Z" finished-at="2019-07-19T06:38:42Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="123976" started-at="2019-07-19T06:09:01Z" finished-at="2019-07-19T06:11:05Z">
+    <test name="Surefire test" duration-ms="162546" started-at="2019-07-19T06:36:00Z" finished-at="2019-07-19T06:38:42Z">
       <class name="xClubsys.MembershipAR">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="setUp" is-config="true" duration-ms="29989" started-at="2019-07-19T06:09:01Z" finished-at="2019-07-19T06:09:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="setUp" is-config="true" duration-ms="26172" started-at="2019-07-19T06:36:00Z" finished-at="2019-07-19T06:36:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="BankPayment()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="BankPayment" duration-ms="8545" started-at="2019-07-19T06:09:31Z" finished-at="2019-07-19T06:09:39Z">
+        <test-method status="FAIL" signature="BankPayment()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="BankPayment" duration-ms="18427" started-at="2019-07-19T06:36:26Z" finished-at="2019-07-19T06:36:45Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[1]"}
@@ -20,8 +20,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[1]}]]>
             </message>
             <full-stacktrace>
@@ -31,8 +31,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -85,7 +85,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BankPayment -->
-        <test-method status="FAIL" signature="BankReturnPay()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="BankReturnPay" duration-ms="5111" started-at="2019-07-19T06:09:40Z" finished-at="2019-07-19T06:09:45Z">
+        <test-method status="FAIL" signature="BankReturnPay()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="BankReturnPay" duration-ms="5103" started-at="2019-07-19T06:36:45Z" finished-at="2019-07-19T06:36:50Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[2]/div/a"}
@@ -94,8 +94,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=//div[2]/div/a}]]>
             </message>
             <full-stacktrace>
@@ -105,8 +105,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=//div[2]/div/a}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -159,11 +159,81 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BankReturnPay -->
-        <test-method status="PASS" signature="CreditNote()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="CreditNote" duration-ms="22735" started-at="2019-07-19T06:09:45Z" finished-at="2019-07-19T06:10:07Z">
+        <test-method status="FAIL" signature="CreditNote()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="CreditNote" duration-ms="52103" started-at="2019-07-19T06:36:50Z" finished-at="2019-07-19T06:37:42Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Void Date'])[1]/following::span[1]"}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
+*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Void Date'])[1]/following::span[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Void Date'])[1]/following::span[1]"}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
+*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Void Date'])[1]/following::span[1]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at xClubsys.MembershipAR.CreditNote(MembershipAR.java:1406)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditNote -->
-        <test-method status="FAIL" signature="CreditNote_BatchImport_Page()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="CreditNote_BatchImport_Page" duration-ms="19" started-at="2019-07-19T06:10:07Z" finished-at="2019-07-19T06:10:07Z">
+        <test-method status="FAIL" signature="CreditNote_BatchImport_Page()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="CreditNote_BatchImport_Page" duration-ms="20" started-at="2019-07-19T06:37:42Z" finished-at="2019-07-19T06:37:42Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Import your credit notes'])[1]/following::span[1]"}
@@ -172,8 +242,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Import your credit notes'])[1]/following::span[1]}]]>
             </message>
             <full-stacktrace>
@@ -183,8 +253,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Import your credit notes'])[1]/following::span[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -237,7 +307,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditNote_BatchImport_Page -->
-        <test-method status="FAIL" signature="DebitNote_BatchImport_Page()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="DebitNote_BatchImport_Page" duration-ms="53" started-at="2019-07-19T06:10:07Z" finished-at="2019-07-19T06:10:08Z">
+        <test-method status="FAIL" signature="DebitNote_BatchImport_Page()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="DebitNote_BatchImport_Page" duration-ms="55" started-at="2019-07-19T06:37:42Z" finished-at="2019-07-19T06:37:42Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Import your debit notes'])[1]/following::span[1]"}
@@ -246,8 +316,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Import your debit notes'])[1]/following::span[1]}]]>
             </message>
             <full-stacktrace>
@@ -257,8 +327,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Import your debit notes'])[1]/following::span[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -311,7 +381,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitNote_BatchImport_Page -->
-        <test-method status="FAIL" signature="DebitNote_NewDebitNote()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="DebitNote_NewDebitNote" duration-ms="53" started-at="2019-07-19T06:10:08Z" finished-at="2019-07-19T06:10:08Z">
+        <test-method status="FAIL" signature="DebitNote_NewDebitNote()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="DebitNote_NewDebitNote" duration-ms="47" started-at="2019-07-19T06:37:42Z" finished-at="2019-07-19T06:37:42Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='New Debit Note'])[1]/following::h4[1]"}
@@ -320,8 +390,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='New Debit Note'])[1]/following::h4[1]}]]>
             </message>
             <full-stacktrace>
@@ -331,8 +401,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='New Debit Note'])[1]/following::h4[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -385,11 +455,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitNote_NewDebitNote -->
-        <test-method status="PASS" signature="Instalment()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="Instalment" duration-ms="5453" started-at="2019-07-19T06:10:08Z" finished-at="2019-07-19T06:10:13Z">
+        <test-method status="PASS" signature="Instalment()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="Instalment" duration-ms="8453" started-at="2019-07-19T06:37:42Z" finished-at="2019-07-19T06:37:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Instalment -->
-        <test-method status="FAIL" signature="MemberPenaltyFee()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="MemberPenaltyFee" duration-ms="43" started-at="2019-07-19T06:10:13Z" finished-at="2019-07-19T06:10:13Z">
+        <test-method status="FAIL" signature="MemberPenaltyFee()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="MemberPenaltyFee" duration-ms="46" started-at="2019-07-19T06:37:51Z" finished-at="2019-07-19T06:37:51Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Post Penalty Fee'])[1]/following::span[1]"}
@@ -398,8 +468,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Post Penalty Fee'])[1]/following::span[1]}]]>
             </message>
             <full-stacktrace>
@@ -409,8 +479,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Post Penalty Fee'])[1]/following::span[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -463,7 +533,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MemberPenaltyFee -->
-        <test-method status="FAIL" signature="MemberSubscriptionFee()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="MemberSubscriptionFee" duration-ms="53" started-at="2019-07-19T06:10:13Z" finished-at="2019-07-19T06:10:13Z">
+        <test-method status="FAIL" signature="MemberSubscriptionFee()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="MemberSubscriptionFee" duration-ms="40" started-at="2019-07-19T06:37:51Z" finished-at="2019-07-19T06:37:51Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//md-tab-item"}
@@ -472,8 +542,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=//md-tab-item}]]>
             </message>
             <full-stacktrace>
@@ -483,8 +553,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=//md-tab-item}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -537,11 +607,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MemberSubscriptionFee -->
-        <test-method status="PASS" signature="PaymentHistory()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="PaymentHistory" duration-ms="27618" started-at="2019-07-19T06:10:13Z" finished-at="2019-07-19T06:10:41Z">
+        <test-method status="PASS" signature="PaymentHistory()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="PaymentHistory" duration-ms="27756" started-at="2019-07-19T06:37:51Z" finished-at="2019-07-19T06:38:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PaymentHistory -->
-        <test-method status="FAIL" signature="PostingGL()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="PostingGL" duration-ms="3175" started-at="2019-07-19T06:10:41Z" finished-at="2019-07-19T06:10:44Z">
+        <test-method status="FAIL" signature="PostingGL()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="PostingGL" duration-ms="3174" started-at="2019-07-19T06:38:18Z" finished-at="2019-07-19T06:38:22Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Transferred'])[2]/preceding::md-tab-item[1]"}
@@ -550,8 +620,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Transferred'])[2]/preceding::md-tab-item[1]}]]>
             </message>
             <full-stacktrace>
@@ -561,8 +631,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Transferred'])[2]/preceding::md-tab-item[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -615,7 +685,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostingGL -->
-        <test-method status="FAIL" signature="RefundTransactions()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="RefundTransactions" duration-ms="19481" started-at="2019-07-19T06:10:44Z" finished-at="2019-07-19T06:11:03Z">
+        <test-method status="FAIL" signature="RefundTransactions()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="RefundTransactions" duration-ms="19502" started-at="2019-07-19T06:38:22Z" finished-at="2019-07-19T06:38:41Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='main']/div[1]/div[@class='mCSB_container']//form[@name='form1']/md-card/md-card-content[3]/div/div[1]/md-input-container[1]/label[.='Refund Types']"}
@@ -624,8 +694,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=//div[@id='main']/div[1]/div[@class='mCSB_container']//form[@name='form1']/md-card/md-card-content[3]/div/div[1]/md-input-container[1]/label[.='Refund Types']}]]>
             </message>
             <full-stacktrace>
@@ -635,8 +705,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=//div[@id='main']/div[1]/div[@class='mCSB_container']//form[@name='form1']/md-card/md-card-content[3]/div/div[1]/md-input-container[1]/label[.='Refund Types']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -689,7 +759,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RefundTransactions -->
-        <test-method status="FAIL" signature="RefundableDeposit()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="RefundableDeposit" duration-ms="69" started-at="2019-07-19T06:11:03Z" finished-at="2019-07-19T06:11:04Z">
+        <test-method status="FAIL" signature="RefundableDeposit()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="RefundableDeposit" duration-ms="71" started-at="2019-07-19T06:38:41Z" finished-at="2019-07-19T06:38:41Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <p flex="" class="ng-binding flex">...</p> is not clickable at point (140, 376). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
@@ -697,8 +767,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <p flex="" class="ng-binding flex">...</p> is not clickable at point (140, 376). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
@@ -706,8 +776,8 @@ Session ID: 1ad705b8926a8e553cda4c8087394caa]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -757,7 +827,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RefundableDeposit -->
-        <test-method status="FAIL" signature="RefundableDeposit_AdjustmentRefundableDeposit()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="RefundableDeposit_AdjustmentRefundableDeposit" duration-ms="65" started-at="2019-07-19T06:11:04Z" finished-at="2019-07-19T06:11:04Z">
+        <test-method status="FAIL" signature="RefundableDeposit_AdjustmentRefundableDeposit()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="RefundableDeposit_AdjustmentRefundableDeposit" duration-ms="71" started-at="2019-07-19T06:38:41Z" finished-at="2019-07-19T06:38:41Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Remarks'])[1]/following::button[1]"}
@@ -766,8 +836,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Remarks'])[1]/following::button[1]}]]>
             </message>
             <full-stacktrace>
@@ -777,8 +847,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Remarks'])[1]/following::button[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -831,7 +901,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RefundableDeposit_AdjustmentRefundableDeposit -->
-        <test-method status="FAIL" signature="Reminder()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="Reminder" duration-ms="73" started-at="2019-07-19T06:11:04Z" finished-at="2019-07-19T06:11:04Z">
+        <test-method status="FAIL" signature="Reminder()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="Reminder" duration-ms="68" started-at="2019-07-19T06:38:41Z" finished-at="2019-07-19T06:38:41Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <p flex="" class="ng-binding flex">...</p> is not clickable at point (140, 536). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
@@ -839,8 +909,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <p flex="" class="ng-binding flex">...</p> is not clickable at point (140, 536). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
@@ -848,8 +918,8 @@ Session ID: 1ad705b8926a8e553cda4c8087394caa]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -899,7 +969,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reminder -->
-        <test-method status="FAIL" signature="RepeatingDebitNote()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="RepeatingDebitNote" duration-ms="65" started-at="2019-07-19T06:11:04Z" finished-at="2019-07-19T06:11:04Z">
+        <test-method status="FAIL" signature="RepeatingDebitNote()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="RepeatingDebitNote" duration-ms="67" started-at="2019-07-19T06:38:41Z" finished-at="2019-07-19T06:38:41Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <p flex="" class="ng-binding flex">...</p> is not clickable at point (140, 296). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
@@ -907,8 +977,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <p flex="" class="ng-binding flex">...</p> is not clickable at point (140, 296). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
@@ -916,8 +986,8 @@ Session ID: 1ad705b8926a8e553cda4c8087394caa]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -967,7 +1037,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RepeatingDebitNote -->
-        <test-method status="FAIL" signature="RepeatingDebitNote_NewRepeatingDebitNote()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="RepeatingDebitNote_NewRepeatingDebitNote" duration-ms="54" started-at="2019-07-19T06:11:04Z" finished-at="2019-07-19T06:11:04Z">
+        <test-method status="FAIL" signature="RepeatingDebitNote_NewRepeatingDebitNote()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="RepeatingDebitNote_NewRepeatingDebitNote" duration-ms="51" started-at="2019-07-19T06:38:41Z" finished-at="2019-07-19T06:38:41Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/following::button[1]"}
@@ -976,8 +1046,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/following::button[1]}]]>
             </message>
             <full-stacktrace>
@@ -987,8 +1057,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/following::button[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1041,7 +1111,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RepeatingDebitNote_NewRepeatingDebitNote -->
-        <test-method status="FAIL" signature="StatementEnquiry()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="StatementEnquiry" duration-ms="91" started-at="2019-07-19T06:11:04Z" finished-at="2019-07-19T06:11:04Z">
+        <test-method status="FAIL" signature="StatementEnquiry()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="StatementEnquiry" duration-ms="70" started-at="2019-07-19T06:38:42Z" finished-at="2019-07-19T06:38:42Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <p flex="" class="ng-binding flex">...</p> is not clickable at point (140, 496). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
@@ -1049,8 +1119,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <p flex="" class="ng-binding flex">...</p> is not clickable at point (140, 496). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
@@ -1058,8 +1128,8 @@ Session ID: 1ad705b8926a8e553cda4c8087394caa]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1109,7 +1179,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StatementEnquiry -->
-        <test-method status="FAIL" signature="TheUntitledTestCaseTestCreditNote_NewCreaditNote()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="TheUntitledTestCaseTestCreditNote_NewCreaditNote" duration-ms="49" started-at="2019-07-19T06:11:04Z" finished-at="2019-07-19T06:11:04Z">
+        <test-method status="FAIL" signature="TheUntitledTestCaseTestCreditNote_NewCreaditNote()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="TheUntitledTestCaseTestCreditNote_NewCreaditNote" duration-ms="105" started-at="2019-07-19T06:38:42Z" finished-at="2019-07-19T06:38:42Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='New Credit Note'])[1]/following::h4[1]"}
@@ -1118,8 +1188,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='New Credit Note'])[1]/following::h4[1]}]]>
             </message>
             <full-stacktrace>
@@ -1129,8 +1199,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ad705b8926a8e553cda4c8087394caa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5920194b4b0bd7179a8235b5489ee2fd
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='New Credit Note'])[1]/following::h4[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1183,13 +1253,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TheUntitledTestCaseTestCreditNote_NewCreaditNote -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:xClubsys.MembershipAR@45cff11c]" name="tearDown" is-config="true" duration-ms="697" started-at="2019-07-19T06:11:04Z" finished-at="2019-07-19T06:11:05Z">
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:xClubsys.MembershipAR@3f446bef]" name="tearDown" is-config="true" duration-ms="714" started-at="2019-07-19T06:38:42Z" finished-at="2019-07-19T06:38:42Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[java.lang.AssertionError: expected [Debit Note List] but found [Bank Payment]java.lang.AssertionError: expected [ALL] but found [CREDIT CARD]java.lang.AssertionError: expected [DRAFT] but found [GIRO]java.lang.AssertionError: expected [Debit Note List] but found [Credit Card Return]java.lang.AssertionError: expected [Credit Note List] but found [Import your debit notes]java.lang.AssertionError: expected [Credit Note List] but found [New Debit Note]java.lang.AssertionError: expected [Instalment List] but found [Member Penalty Fee]java.lang.AssertionError: expected [Instalment List] but found [Member Subscription Fee List]java.lang.AssertionError: expected [Member Subscription Fee List] but found [Posting GL History]java.lang.AssertionError: expected [Create Refund Transaction] but found [Adjustment Refundable Deposit]java.lang.AssertionError: expected [Create Refund Transaction] but found [New Repeating Debit Note]java.lang.AssertionError: expected [Create Refund Transaction] but found [New Credit Note]]]>
+              <![CDATA[java.lang.AssertionError: expected [Debit Note List] but found [Bank Payment]java.lang.AssertionError: expected [ALL] but found [CREDIT CARD]java.lang.AssertionError: expected [DRAFT] but found [GIRO]java.lang.AssertionError: expected [Debit Note List] but found [Credit Card Return]java.lang.AssertionError: expected [Created Date] but found [Void Date]java.lang.AssertionError: expected [Credit Note List] but found [Import your debit notes]java.lang.AssertionError: expected [Credit Note List] but found [New Debit Note]java.lang.AssertionError: expected [Instalment List] but found [Member Penalty Fee]java.lang.AssertionError: expected [Instalment List] but found [Member Subscription Fee List]java.lang.AssertionError: expected [Member Subscription Fee List] but found [Posting GL History]java.lang.AssertionError: expected [Create Refund Transaction] but found [Adjustment Refundable Deposit]java.lang.AssertionError: expected [Create Refund Transaction] but found [New Repeating Debit Note]java.lang.AssertionError: expected [Create Refund Transaction] but found [New Credit Note]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: java.lang.AssertionError: expected [Debit Note List] but found [Bank Payment]java.lang.AssertionError: expected [ALL] but found [CREDIT CARD]java.lang.AssertionError: expected [DRAFT] but found [GIRO]java.lang.AssertionError: expected [Debit Note List] but found [Credit Card Return]java.lang.AssertionError: expected [Credit Note List] but found [Import your debit notes]java.lang.AssertionError: expected [Credit Note List] but found [New Debit Note]java.lang.AssertionError: expected [Instalment List] but found [Member Penalty Fee]java.lang.AssertionError: expected [Instalment List] but found [Member Subscription Fee List]java.lang.AssertionError: expected [Member Subscription Fee List] but found [Posting GL History]java.lang.AssertionError: expected [Create Refund Transaction] but found [Adjustment Refundable Deposit]java.lang.AssertionError: expected [Create Refund Transaction] but found [New Repeating Debit Note]java.lang.AssertionError: expected [Create Refund Transaction] but found [New Credit Note]
+              <![CDATA[java.lang.AssertionError: java.lang.AssertionError: expected [Debit Note List] but found [Bank Payment]java.lang.AssertionError: expected [ALL] but found [CREDIT CARD]java.lang.AssertionError: expected [DRAFT] but found [GIRO]java.lang.AssertionError: expected [Debit Note List] but found [Credit Card Return]java.lang.AssertionError: expected [Created Date] but found [Void Date]java.lang.AssertionError: expected [Credit Note List] but found [Import your debit notes]java.lang.AssertionError: expected [Credit Note List] but found [New Debit Note]java.lang.AssertionError: expected [Instalment List] but found [Member Penalty Fee]java.lang.AssertionError: expected [Instalment List] but found [Member Subscription Fee List]java.lang.AssertionError: expected [Member Subscription Fee List] but found [Posting GL History]java.lang.AssertionError: expected [Create Refund Transaction] but found [Adjustment Refundable Deposit]java.lang.AssertionError: expected [Create Refund Transaction] but found [New Repeating Debit Note]java.lang.AssertionError: expected [Create Refund Transaction] but found [New Credit Note]
 at org.testng.Assert.fail(Assert.java:96)
 at xClubsys.MembershipAR.tearDown(MembershipAR.java:3773)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

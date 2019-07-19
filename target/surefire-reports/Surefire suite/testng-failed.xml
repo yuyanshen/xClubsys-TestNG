@@ -7,6 +7,7 @@
         <methods>
           <include name="RefundableDeposit"/>
           <include name="RepeatingDebitNote"/>
+          <include name="CreditNote"/>
           <include name="StatementEnquiry"/>
           <include name="Reminder"/>
           <include name="RepeatingDebitNote_NewRepeatingDebitNote"/>
