@@ -1,5 +1,14 @@
-<<<<<<< HEAD
-C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\MembershipAR.java
-=======
-C:\Users\K2User\git\repository\UItest\src\test\java\xClubsys\MembershipAR.java
->>>>>>> 0b15bd10944b4ab15e736b3f67f5f4f6a2f56b64
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\DebitNoteModule.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\BankPayment.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\MemberPenaltyFee.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\RefundTransactions.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\CreditNote.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\MemberSubscriptionFee.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\PaymentHistory.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\Reminder.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\BankReturnPay.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\Instalment.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\PostingGL.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\RefundableDeposit.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\RepeatingDebitNote.java
+C:\Users\pisy\xClubsys-TestNG\src\test\java\xClubsys\StatementEnquiry.java

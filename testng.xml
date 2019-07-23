@@ -3,7 +3,20 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="xClubsys.MembershipAR"/>
+      <class name="xClubsys.BankPayment"/>
+      <class name="xClubsys.RefundableDeposit"/>
+      <class name="xClubsys.RepeatingDebitNote"/>
+      <class name="xClubsys.RefundTransactions"/>
+      <class name="xClubsys.DebitNoteModule"/>
+      <class name="xClubsys.Instalment"/>
+      <class name="xClubsys.CreditNote"/>
+      <class name="xClubsys.StatementEnquiry"/>
+      <class name="xClubsys.MemberSubscriptionFee"/>
+      <class name="xClubsys.BankReturnPay"/>
+      <class name="xClubsys.MemberPenaltyFee"/>
+      <class name="xClubsys.Reminder"/>
+      <class name="xClubsys.PaymentHistory"/>
+      <class name="xClubsys.PostingGL"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
