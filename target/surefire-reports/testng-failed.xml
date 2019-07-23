@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
@@ -28,3 +29,36 @@
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="xClubsys.MembershipAR">
+        <methods>
+          <include name="RefundableDeposit"/>
+          <include name="RepeatingDebitNote"/>
+          <include name="CreditNote"/>
+          <include name="StatementEnquiry"/>
+          <include name="Reminder"/>
+          <include name="RepeatingDebitNote_NewRepeatingDebitNote"/>
+          <include name="BankPayment"/>
+          <include name="RefundTransactions"/>
+          <include name="tearDown"/>
+          <include name="DebitNote_NewDebitNote"/>
+          <include name="CreditNote_BatchImport_Page"/>
+          <include name="MemberSubscriptionFee"/>
+          <include name="DebitNote_BatchImport_Page"/>
+          <include name="setUp"/>
+          <include name="RefundableDeposit_AdjustmentRefundableDeposit"/>
+          <include name="PostingGL"/>
+          <include name="TheUntitledTestCaseTestCreditNote_NewCreaditNote"/>
+          <include name="BankReturnPay"/>
+          <include name="MemberPenaltyFee"/>
+        </methods>
+      </class> <!-- xClubsys.MembershipAR -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
+>>>>>>> 0b15bd10944b4ab15e736b3f67f5f4f6a2f56b64
