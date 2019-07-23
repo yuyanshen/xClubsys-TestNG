@@ -85,7 +85,6 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-<<<<<<< HEAD
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.8</source>
@@ -100,14 +99,6 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>TestNG.xml</suiteXmlFile>
                     </suiteXmlFiles>
-=======
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M3</version>
-                	<configuration>
-					<includes>
-						<include>**/*AR.java</include>
-					</includes>
->>>>>>> 0b15bd10944b4ab15e736b3f67f5f4f6a2f56b64
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
