@@ -4,6 +4,9 @@ import java.util.regex.Pattern;
 import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
+
+import io.qameta.allure.*;
+
 import static org.testng.Assert.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.*;
@@ -12,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 
+@Feature("Membership")
 public class BankPayment {
 	  private WebDriver driver;
 	  private String baseUrl;
@@ -25,6 +29,10 @@ public class BankPayment {
 	          // TODO: handle exception
 	      }
 	  }
+	  @Test(description = "侯征测试")
+	    @Story("测试发券")
+	    @Description("主要测试四种券发送")
+	    @Step("测试步骤....")
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
       ChromeOptions options = new ChromeOptions();
@@ -41,21 +49,15 @@ public class BankPayment {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
-  public void highlightingElement(WebDriver driver,WebElement elem) {
-	  ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
-  }
+
   
   @Test
   public void BankPayment() throws InterruptedException
 
   {
-	  WebElement elem=driver.findElement(By.xpath("//div[3]/a/div"));
-	  highlightingElement(driver, elem);
-	  elem.click();
+	  driver.findElement(By.xpath("//div[3]/a/div")).click();
 	  sleep(4);
-	  WebElement elem1=driver.findElement(By.xpath("//div[@id='mCSB_2_container']/md-list/md-list/md-list-item[12]/a/p"));
-	  highlightingElement(driver, elem1);
-	  elem.click();
+	  driver.findElement(By.xpath("//div[@id='mCSB_2_container']/md-list/md-list/md-list-item[12]/a/p")).click();
 	  sleep(4);
       try
       {

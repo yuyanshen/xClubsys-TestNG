@@ -1,0 +1,14 @@
+xClubsys\MemberPenaltyFee.class
+xClubsys\BankPayment.class
+xClubsys\CreditNote.class
+xClubsys\RepeatingDebitNote.class
+xClubsys\Instalment.class
+xClubsys\RefundableDeposit.class
+xClubsys\DebitNoteModule.class
+xClubsys\PaymentHistory.class
+xClubsys\BankReturnPay.class
+xClubsys\PostingGL.class
+xClubsys\StatementEnquiry.class
+xClubsys\MemberSubscriptionFee.class
+xClubsys\Reminder.class
+xClubsys\RefundTransactions.class

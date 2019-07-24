@@ -4,7 +4,7 @@
   <test name="Test">
     <classes>
       <class name="xClubsys.BankPayment"/>
-      <class name="xClubsys.RefundableDeposit"/>
+<!--       <class name="xClubsys.RefundableDeposit"/>
       <class name="xClubsys.RepeatingDebitNote"/>
       <class name="xClubsys.RefundTransactions"/>
       <class name="xClubsys.DebitNoteModule"/>
@@ -16,7 +16,7 @@
       <class name="xClubsys.MemberPenaltyFee"/>
       <class name="xClubsys.Reminder"/>
       <class name="xClubsys.PaymentHistory"/>
-      <class name="xClubsys.PostingGL"/>
+      <class name="xClubsys.PostingGL"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
