@@ -39,16 +39,16 @@ public class DebitNoteModule {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
-  public void highlightingElement(WebDriver driver,WebElement elem) {
-	  ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
-  }
   @Test
   public void DebitNoteModule() throws InterruptedException
   {
+	  sleep(5);
       //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+	  driver.get(config.GetBaseUrl()+"/MembershipAR/AR/Invoice/List");
+	  sleep(8);
       try
       {
-          assertEquals("Debit Note List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
+          assertEquals("Debit Note List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Debit Note'])[2]/following::h2[1]")).getText());
       }
       catch (AssertionError e)
       {
@@ -531,10 +531,14 @@ public class DebitNoteModule {
       {
           verificationErrors.append(e.toString());
       }
+      sleep(5);
   }
   @Test
-  public void DebitNote_NewDebitNote()
+  public void DebitNote_NewDebitNote()throws InterruptedException
   {
+	  sleep(5);
+	  driver.get(config.GetBaseUrl()+"/MembershipAR/AR/Invoice/Create?invoiceType=0");
+	  sleep(5);
       try
       {
           assertEquals("New Debit Note", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership AR'])[2]/following::h2[1]")).getText());
@@ -543,14 +547,7 @@ public class DebitNoteModule {
       {
           verificationErrors.append(e.toString());
       }
-      try
-      {
-          assertEquals("DRAFT", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='New Debit Note'])[1]/following::h4[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
+
       try
       {
           assertEquals("Member", driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card/md-card-content[1]//label[.='Member']")).getText());
@@ -721,8 +718,11 @@ public class DebitNoteModule {
       }
   } 
   @Test
-  public void DebitNote_BatchImport_Page()
+  public void DebitNote_BatchImport_Page()throws InterruptedException
   {
+	  sleep(8);
+	  driver.get(config.GetBaseUrl()+"/MembershipAR/AR/DebitNoteStep");
+	  sleep(8);
       try
       {
           assertEquals("Import your debit notes", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Collapse'])[1]/following::h2[1]")).getText());
@@ -811,6 +811,7 @@ public class DebitNoteModule {
       {
           verificationErrors.append(e.toString());
       }
+      sleep(8);
   }
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {

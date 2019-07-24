@@ -29,10 +29,6 @@ public class BankPayment {
 	          // TODO: handle exception
 	      }
 	  }
-	  @Test(description = "侯征测试")
-	    @Story("测试发券")
-	    @Description("主要测试四种券发送")
-	    @Step("测试步骤....")
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
       ChromeOptions options = new ChromeOptions();
@@ -53,7 +49,6 @@ public class BankPayment {
   
   @Test
   public void BankPayment() throws InterruptedException
-
   {
 	  driver.findElement(By.xpath("//div[3]/a/div")).click();
 	  sleep(4);

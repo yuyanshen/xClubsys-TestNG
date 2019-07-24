@@ -39,14 +39,12 @@ public class BankReturnPay {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
-  public void highlightingElement(WebDriver driver,WebElement elem) {
-	  ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
-  }
   
   @Test
   public void BankReturnPay() throws InterruptedException
   {
-      Thread.sleep(5000);
+	  driver.findElement(By.xpath("//div[3]/a/div")).click();
+	  sleep(4);
       try
       {
           assertEquals("CREDIT CARD", driver.findElement(By.xpath("//md-tab-item")).getText());
@@ -188,7 +186,7 @@ public class BankReturnPay {
   }
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
-    driver.quit();
+    //driver.quit();
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
       fail(verificationErrorString);

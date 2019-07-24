@@ -3,20 +3,14 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="xClubsys.BankReturnPay">
-        <methods>
-          <include name="setUp"/>
-          <include name="BankReturnPay"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- xClubsys.BankReturnPay -->
-      <class name="xClubsys.Instalment">
+      <class name="xClubsys.DebitNoteModule">
         <methods>
           <include name="tearDown"/>
+          <include name="DebitNote_BatchImport_Page"/>
+          <include name="DebitNote_NewDebitNote"/>
           <include name="setUp"/>
-          <include name="Instalment"/>
         </methods>
-      </class> <!-- xClubsys.Instalment -->
+      </class> <!-- xClubsys.DebitNoteModule -->
       <class name="xClubsys.Reminder">
         <methods>
           <include name="Reminder"/>
@@ -24,24 +18,28 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- xClubsys.Reminder -->
-      <class name="xClubsys.CreditNote">
+      <class name="xClubsys.PostingGL">
         <methods>
-          <include name="CreditNote_BatchImport_Page"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="CreditNote"/>
-          <include name="CreditNote_NewCreaditNote"/>
+          <include name="tearDown"/>
+          <include name="PostingGL"/>
         </methods>
-      </class> <!-- xClubsys.CreditNote -->
-      <class name="xClubsys.DebitNoteModule">
+      </class> <!-- xClubsys.PostingGL -->
+      <class name="xClubsys.BankReturnPay">
         <methods>
-          <include name="DebitNoteModule"/>
-          <include name="tearDown"/>
-          <include name="DebitNote_BatchImport_Page"/>
-          <include name="DebitNote_NewDebitNote"/>
           <include name="setUp"/>
+          <include name="BankReturnPay"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- xClubsys.DebitNoteModule -->
+      </class> <!-- xClubsys.BankReturnPay -->
+      <class name="xClubsys.RefundableDeposit">
+        <methods>
+          <include name="RefundableDeposit_AdjustmentRefundableDeposit"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="RefundableDeposit"/>
+        </methods>
+      </class> <!-- xClubsys.RefundableDeposit -->
       <class name="xClubsys.RefundTransactions">
         <methods>
           <include name="tearDown"/>
@@ -57,49 +55,22 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- xClubsys.RepeatingDebitNote -->
-      <class name="xClubsys.StatementEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="StatementEnquiry"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- xClubsys.StatementEnquiry -->
-      <class name="xClubsys.PostingGL">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="PostingGL"/>
-        </methods>
-      </class> <!-- xClubsys.PostingGL -->
-      <class name="xClubsys.MemberSubscriptionFee">
+      <class name="xClubsys.Instalment">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="MemberSubscriptionFee"/>
+          <include name="Instalment"/>
         </methods>
-      </class> <!-- xClubsys.MemberSubscriptionFee -->
-      <class name="xClubsys.RefundableDeposit">
+      </class> <!-- xClubsys.Instalment -->
+      <class name="xClubsys.CreditNote">
         <methods>
-          <include name="RefundableDeposit_AdjustmentRefundableDeposit"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="RefundableDeposit"/>
-        </methods>
-      </class> <!-- xClubsys.RefundableDeposit -->
-      <class name="xClubsys.BankPayment">
-        <methods>
+          <include name="CreditNote_BatchImport_Page"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="BankPayment"/>
+          <include name="CreditNote"/>
+          <include name="CreditNote_NewCreaditNote"/>
         </methods>
-      </class> <!-- xClubsys.BankPayment -->
-      <class name="xClubsys.PaymentHistory">
-        <methods>
-          <include name="PaymentHistory"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- xClubsys.PaymentHistory -->
+      </class> <!-- xClubsys.CreditNote -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
