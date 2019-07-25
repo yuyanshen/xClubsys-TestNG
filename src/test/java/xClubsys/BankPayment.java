@@ -6,7 +6,14 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 
 import io.qameta.allure.*;
+import net.bytebuddy.utility.privilege.GetSystemPropertyAction;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.TestListenerAdapter;
+import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.*;
@@ -14,11 +21,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
-
+@Listeners({TestFailListener.class})
 @Feature("Membership")
+
 public class BankPayment {
-	  private WebDriver driver;
-	  private String baseUrl;
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
 	  public static void sleep(double d){
@@ -29,12 +35,16 @@ public class BankPayment {
 	          // TODO: handle exception
 	      }
 	  }
+	  
+	  static WebDriver driver;
+	  static final int MAX_TIMEOUT_IN_SECONDS = 5;
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
       ChromeOptions options = new ChromeOptions();
       options.addArguments("--start-maximized");
       driver = new ChromeDriver(options);
       driver.get(config.GetBaseUrl());
+      driver.manage().timeouts().implicitlyWait(MAX_TIMEOUT_IN_SECONDS, TimeUnit.SECONDS);
       verificationErrors = new StringBuffer();
       driver.findElement(By.id("username")).click();
       driver.findElement(By.id("username")).clear();
@@ -56,7 +66,7 @@ public class BankPayment {
 	  sleep(4);
       try
       {
-          assertEquals("Bank Payment", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText(),"Bank Payment");
       }
       catch (AssertionError e)
       {
