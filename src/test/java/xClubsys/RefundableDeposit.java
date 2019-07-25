@@ -28,7 +28,7 @@ public class RefundableDeposit {
       ChromeOptions options = new ChromeOptions();
       options.addArguments("--start-maximized");
       driver = new ChromeDriver(options);
-      driver.get(config.GetBaseUrl());
+      driver.get(config.GetBaseUrl()+"/MembershipAR/AR/RefundableDeposit/List");
       verificationErrors = new StringBuffer();
       driver.findElement(By.id("username")).click();
       driver.findElement(By.id("username")).clear();

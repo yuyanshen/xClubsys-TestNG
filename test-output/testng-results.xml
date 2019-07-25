@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="123353" started-at="2019-07-24T10:49:44Z" finished-at="2019-07-24T10:51:47Z">
+  <suite name="Default suite" duration-ms="25523" started-at="2019-07-25T03:49:33Z" finished-at="2019-07-25T03:49:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="123353" started-at="2019-07-24T10:49:44Z" finished-at="2019-07-24T10:51:47Z">
-      <class name="xClubsys.DebitNoteModule">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.DebitNoteModule@6e4de19b]" name="setUp" is-config="true" duration-ms="29201" started-at="2019-07-24T10:49:44Z" finished-at="2019-07-24T10:50:13Z">
+    <test name="Default test" duration-ms="25523" started-at="2019-07-25T03:49:33Z" finished-at="2019-07-25T03:49:59Z">
+      <class name="xClubsys.Instalment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.Instalment@74e47444]" name="setUp" is-config="true" duration-ms="24876" started-at="2019-07-25T03:49:33Z" finished-at="2019-07-25T03:49:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="DebitNoteModule()[pri:0, instance:xClubsys.DebitNoteModule@6e4de19b]" name="DebitNoteModule" duration-ms="52099" started-at="2019-07-24T10:50:13Z" finished-at="2019-07-24T10:51:05Z">
+        <test-method status="PASS" signature="Instalment()[pri:0, instance:xClubsys.Instalment@74e47444]" name="Instalment" duration-ms="471" started-at="2019-07-25T03:49:58Z" finished-at="2019-07-25T03:49:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DebitNoteModule -->
-        <test-method status="PASS" signature="DebitNote_BatchImport_Page()[pri:0, instance:xClubsys.DebitNoteModule@6e4de19b]" name="DebitNote_BatchImport_Page" duration-ms="30332" started-at="2019-07-24T10:51:05Z" finished-at="2019-07-24T10:51:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DebitNote_BatchImport_Page -->
-        <test-method status="PASS" signature="DebitNote_NewDebitNote()[pri:0, instance:xClubsys.DebitNoteModule@6e4de19b]" name="DebitNote_NewDebitNote" duration-ms="11479" started-at="2019-07-24T10:51:36Z" finished-at="2019-07-24T10:51:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DebitNote_NewDebitNote -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.DebitNoteModule@6e4de19b]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-07-24T10:51:47Z" finished-at="2019-07-24T10:51:47Z">
+        </test-method> <!-- Instalment -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.Instalment@74e47444]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-07-25T03:49:59Z" finished-at="2019-07-25T03:49:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- xClubsys.DebitNoteModule -->
+      </class> <!-- xClubsys.Instalment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

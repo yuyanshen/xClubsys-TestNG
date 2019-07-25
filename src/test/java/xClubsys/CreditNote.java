@@ -28,7 +28,7 @@ public class CreditNote {
       ChromeOptions options = new ChromeOptions();
       options.addArguments("--start-maximized");
       driver = new ChromeDriver(options);
-      driver.get(config.GetBaseUrl());
+      driver.get(config.GetBaseUrl()+"/MembershipAR/AR/CreditNote/List");
       verificationErrors = new StringBuffer();
       driver.findElement(By.id("username")).click();
       driver.findElement(By.id("username")).clear();
@@ -39,18 +39,13 @@ public class CreditNote {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
-  public void highlightingElement(WebDriver driver,WebElement elem) {
-	  ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
-  }
   
   @Test
   public void CreditNote() throws InterruptedException
   {
-      driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='设置'])[1]/following::p[4]")).click();
-      Thread.sleep(5000);
       try
       {
-          assertEquals("Credit Note List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
+    	  assertEquals(driver.findElement(By.cssSelector("h2.ng-binding")).getText(), "Import your credit notes");
       }
       catch (AssertionError e)
       {
@@ -58,7 +53,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("ALL", driver.findElement(By.xpath("//md-tab-item")).getText());
+          assertEquals(driver.findElement(By.xpath("//md-tab-item")).getText(),"ALL");
       }
       catch (AssertionError e)
       {
@@ -66,7 +61,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("DRAFT", driver.findElement(By.xpath("//md-tab-item[2]")).getText());
+          assertEquals(driver.findElement(By.xpath("//md-tab-item[2]")).getText(),"DRAFT");
       }
       catch (AssertionError e)
       {
@@ -74,7 +69,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("AWAITING PAYMENT", driver.findElement(By.xpath("//md-tab-item[3]")).getText());
+          assertEquals(driver.findElement(By.xpath("//md-tab-item[3]")).getText(),"AWAITING PAYMENT");
       }
       catch (AssertionError e)
       {
@@ -82,7 +77,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("PARTIALLY PAID", driver.findElement(By.xpath("//md-tab-item[4]")).getText());
+          assertEquals(driver.findElement(By.xpath("//md-tab-item[4]")).getText(),"PARTIALLY PAID");
       }
       catch (AssertionError e)
       {
@@ -90,7 +85,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("PAID", driver.findElement(By.xpath("//md-tab-item[5]")).getText());
+          assertEquals(driver.findElement(By.xpath("//md-tab-item[5]")).getText(),"PAID");
       }
       catch (AssertionError e)
       {
@@ -98,7 +93,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("VOID", driver.findElement(By.xpath("//md-tab-item[6]")).getText());
+          assertEquals(driver.findElement(By.xpath("//md-tab-item[6]")).getText(),"VOID");
       }
       catch (AssertionError e)
       {
@@ -106,7 +101,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("BATCH IMPORT", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Credit Note List'])[1]/following::button[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Credit Note List'])[1]/following::button[1]")).getText(),"BATCH IMPORT");
       }
       catch (AssertionError e)
       {
@@ -114,7 +109,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("NEW CREDIT NOTE", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Import'])[1]/following::button[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Import'])[1]/following::button[1]")).getText(),"NEW CREDIT NOTE");
       }
       catch (AssertionError e)
       {
@@ -122,7 +117,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("SN", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='VOID'])[2]/following::span[2]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='VOID'])[2]/following::span[2]")).getText(),"SN");
       }
       catch (AssertionError e)
       {
@@ -130,7 +125,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='SN'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='SN'])[1]/following::span[1]")).getText(),"Member");
       }
       catch (AssertionError e)
       {
@@ -138,7 +133,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Created Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[1]/following::span[1]")).getText(),"Created Date");
       }
       catch (AssertionError e)
       {
@@ -146,7 +141,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Effective Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Created Date'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Created Date'])[1]/following::span[1]")).getText(),"Effective Date");
       }
       catch (AssertionError e)
       {
@@ -154,7 +149,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Paid", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Effective Date'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Effective Date'])[1]/following::span[1]")).getText(),"Paid");
       }
       catch (AssertionError e)
       {
@@ -162,7 +157,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Paid'])[3]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Paid'])[3]/following::span[1]")).getText(),"Amount");
       }
       catch (AssertionError e)
       {
@@ -170,7 +165,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Status", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Amount'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Amount'])[1]/following::span[1]")).getText(),"Status");
       }
       catch (AssertionError e)
       {
@@ -180,7 +175,7 @@ public class CreditNote {
       Thread.sleep(3000);
       try
       {
-          assertEquals("SN", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Transform'])[1]/following::span[2]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Transform'])[1]/following::span[2]")).getText(),"SN");
       }
       catch (AssertionError e)
       {
@@ -188,7 +183,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='SN'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='SN'])[1]/following::span[1]")).getText(),"Member");
       }
       catch (AssertionError e)
       {
@@ -196,7 +191,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Created Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[1]/following::span[1]")).getText(),"Created Date");
       }
       catch (AssertionError e)
       {
@@ -204,7 +199,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Effective Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Created Date'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Created Date'])[1]/following::span[1]")).getText(),"Effective Date");
       }
       catch (AssertionError e)
       {
@@ -212,7 +207,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Paid", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Effective Date'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Effective Date'])[1]/following::span[1]")).getText(),"Paid");
       }
       catch (AssertionError e)
       {
@@ -220,7 +215,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Paid'])[3]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Paid'])[3]/following::span[1]")).getText(),"Amount");
       }
       catch (AssertionError e)
       {
@@ -230,7 +225,7 @@ public class CreditNote {
       Thread.sleep(3000);
       try
       {
-          assertEquals("SN", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='VOID'])[2]/following::span[2]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='VOID'])[2]/following::span[2]")).getText(),"SN");
       }
       catch (AssertionError e)
       {
@@ -238,7 +233,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='SN'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='SN'])[1]/following::span[1]")).getText(),"Member");
       }
       catch (AssertionError e)
       {
@@ -422,6 +417,8 @@ public class CreditNote {
   @Test
   public void CreditNote_BatchImport_Page()
   {
+	  driver.findElement(By.cssSelector("button.md-warn.md-button.md-ink-ripple")).click();
+	  sleep(5);
       try
       {
           assertEquals("Step 1.Download our credit notes template file", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Import your credit notes'])[1]/following::span[1]")).getText());
@@ -514,9 +511,24 @@ public class CreditNote {
   @Test
   public void CreditNote_NewCreaditNote()
   {
+	  driver.get(config.GetBaseUrl()+"/MembershipAR/AR/CreditNote/Create?invoiceType=1&edit=1");
+	  sleep(8);
       try
       {
-          assertEquals("New Credit Note", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText(),"New Credit Note");
+      }
+      catch (AssertionError e)
+      {
+          verificationErrors.append(e.toString());
+      }
+		/*
+		 * try { assertEquals(driver.findElement(By.cssSelector(
+		 * "[ng-if='CreditNote\\.invoices\\.Id\\=\\=undefined']")).getText(),"DRAFT"); }
+		 * catch (AssertionError e) { verificationErrors.append(e.toString()); }
+		 */
+      try
+      {
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Remark'])[1]/following::span[2]")).getText(),"Description");
       }
       catch (AssertionError e)
       {
@@ -524,23 +536,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("DRAFT", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='New Credit Note'])[1]/following::h4[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Description", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Remark'])[1]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Qty", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::span[1]")).getText(),"Qty");
       }
       catch (AssertionError e)
       {
@@ -588,7 +584,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("SAVE arrow_drop_down", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::button[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::button[1]")).getText(),"SAVE arrow_drop_down");
       }
       catch (AssertionError e)
       {
@@ -596,7 +592,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("CANCEL", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Save & submit for Approval'])[1]/following::button[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Save & submit for Approval'])[1]/following::button[1]")).getText(),"CANCEL");
       }
       catch (AssertionError e)
       {
@@ -604,7 +600,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("UPLOAD SUPPORTING ATTACHMENT", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='file_upload'])[1]/following::span[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='file_upload'])[1]/following::span[1]")).getText(),"UPLOAD SUPPORTING ATTACHMENT");
       }
       catch (AssertionError e)
       {
@@ -612,7 +608,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("SAVE arrow_drop_down", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::button[1]")).getText());
+          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::button[1]")).getText(),"SAVE arrow_drop_down");
       }
       catch (AssertionError e)
       {
@@ -620,7 +616,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Member", driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card/md-card-content[1]//label[.='Member']")).getText());
+          assertEquals(driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card/md-card-content[1]//label[.='Member']")).getText(),"Member");
       }
       catch (AssertionError e)
       {
@@ -628,7 +624,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("SN", driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card/md-card-content[1]/div[1]/md-input-container[2]/label[@class='ng-scope']")).getText());
+          assertEquals(driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card/md-card-content[1]/div[1]/md-input-container[2]/label[@class='ng-scope']")).getText(),"SN");
       }
       catch (AssertionError e)
       {
@@ -636,7 +632,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Reference", driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card/md-card-content[1]/div[1]/md-input-container[3]/label[@class='ng-scope']")).getText());
+          assertEquals(driver.findElement(By.xpath("//*[@id=\'section_0\']/div[1]/md-input-container[3]/label")).getText(),"Reference");
       }
       catch (AssertionError e)
       {
@@ -644,7 +640,7 @@ public class CreditNote {
       }
       try
       {
-          assertEquals("Charge Code", driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']/md-card-content[1]/div[2]/md-input-container[1]/md-select[@role='listbox']/md-select-value/span[.='Charge Code']")).getText());
+          assertEquals(driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']/md-card-content[1]/div[2]/md-input-container[1]/md-select[@role='listbox']/md-select-value/span[.='Charge Code']")).getText(),"Charge Code");
       }
       catch (AssertionError e)
       {

@@ -120,7 +120,7 @@ public class BankPayment {
       }
       try
       {
-          assertEquals("UBO PAYMENT", driver.findElement(By.xpath("//div[2]/div/a")).getText());
+    	  assertEquals(driver.findElement(By.linkText("UBO Payment")).getText(), "UBO Payment");
       }
       catch (AssertionError e)
       {

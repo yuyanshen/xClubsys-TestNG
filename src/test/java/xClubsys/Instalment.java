@@ -28,7 +28,7 @@ public class Instalment {
       ChromeOptions options = new ChromeOptions();
       options.addArguments("--start-maximized");
       driver = new ChromeDriver(options);
-      driver.get(config.GetBaseUrl());
+      driver.get(config.GetBaseUrl()+"/MembershipAR/AR/Instalment/List");
       verificationErrors = new StringBuffer();
       driver.findElement(By.id("username")).click();
       driver.findElement(By.id("username")).clear();
@@ -39,17 +39,12 @@ public class Instalment {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
-  public void highlightingElement(WebDriver driver,WebElement elem) {
-	  ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
-  }
   @Test
   public void Instalment() throws InterruptedException
   {
-      driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='设置'])[1]/following::p[6]")).click();
-      Thread.sleep(5000);
       try
       {
-          assertEquals("Instalment List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
+    	  assertEquals(driver.findElement(By.cssSelector("h2.ng-binding")).getText(), "Instalment List");
       }
       catch (AssertionError e)
       {

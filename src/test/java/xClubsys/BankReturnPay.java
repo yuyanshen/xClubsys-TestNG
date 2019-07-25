@@ -28,7 +28,7 @@ public class BankReturnPay {
       ChromeOptions options = new ChromeOptions();
       options.addArguments("--start-maximized");
       driver = new ChromeDriver(options);
-      driver.get(config.GetBaseUrl());
+      driver.get(config.GetBaseUrl()+ "/MembershipAR/AR/CreditCardReturn/List");
       verificationErrors = new StringBuffer();
       driver.findElement(By.id("username")).click();
       driver.findElement(By.id("username")).clear();
@@ -39,12 +39,11 @@ public class BankReturnPay {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
+
   
   @Test
   public void BankReturnPay() throws InterruptedException
   {
-	  driver.findElement(By.xpath("//div[3]/a/div")).click();
-	  sleep(4);
       try
       {
           assertEquals("CREDIT CARD", driver.findElement(By.xpath("//md-tab-item")).getText());
@@ -186,7 +185,7 @@ public class BankReturnPay {
   }
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
-    //driver.quit();
+    driver.quit();
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
       fail(verificationErrorString);
