@@ -39,15 +39,11 @@ public class RefundTransactions {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
-  public void highlightingElement(WebDriver driver,WebElement elem) {
-	  ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
-  }
+
   
   @Test
   public void RefundTransactions() throws InterruptedException
   {
-      driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='设置'])[1]/following::p[10]")).click();
-      Thread.sleep(5000);
       try
       {
           assertEquals("Refund Transactions", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Refund Transaction'])[2]/following::h2[1]")).getText());

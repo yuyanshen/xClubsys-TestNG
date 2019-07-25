@@ -39,9 +39,7 @@ public class MemberPenaltyFee {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
-  public void highlightingElement(WebDriver driver,WebElement elem) {
-	  ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
-  }
+
   
   
   @AfterClass(alwaysRun = true)

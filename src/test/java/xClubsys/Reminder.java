@@ -39,15 +39,10 @@ public class Reminder {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
   }
-  public void highlightingElement(WebDriver driver,WebElement elem) {
-	  ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
-  }
   
   @Test
   public void Reminder() throws InterruptedException
   {
-      driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='设置'])[1]/following::p[9]")).click();
-      Thread.sleep(5000);
       try
       {
           assertEquals("Reminders", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());

@@ -46,8 +46,6 @@ public class PaymentHistory {
   @Test
   public void PaymentHistory() throws InterruptedException
   {
-      driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='设置'])[1]/following::p[7]")).click();
-      Thread.sleep(5000);
       try
       {
           assertEquals("Payment History List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());

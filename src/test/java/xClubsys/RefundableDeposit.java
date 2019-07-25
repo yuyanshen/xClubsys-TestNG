@@ -46,8 +46,7 @@ public class RefundableDeposit {
   @Test
   public void RefundableDeposit() throws InterruptedException
   {
-      driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='设置'])[1]/following::p[5]")).click();
-      Thread.sleep(4000);
+
       try
       {
           assertEquals("Refundable Deposit History List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
