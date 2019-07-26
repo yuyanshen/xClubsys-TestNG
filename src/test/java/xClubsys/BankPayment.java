@@ -35,14 +35,11 @@ public class BankPayment {
 	          // TODO: handle exception
 	      }
 	  }
-	  
-	  static WebDriver driver;
+	  WebDriver driver = config.getdriver();
 	  static final int MAX_TIMEOUT_IN_SECONDS = 5;
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-      ChromeOptions options = new ChromeOptions();
-      options.addArguments("--start-maximized");
-      driver = new ChromeDriver(options);
+	   
       driver.get(config.GetBaseUrl());
       driver.manage().timeouts().implicitlyWait(MAX_TIMEOUT_IN_SECONDS, TimeUnit.SECONDS);
       verificationErrors = new StringBuffer();

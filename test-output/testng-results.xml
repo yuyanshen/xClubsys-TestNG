@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49708" started-at="2019-07-25T10:36:48Z" finished-at="2019-07-25T10:37:38Z">
+  <suite name="Default suite" duration-ms="25608" started-at="2019-07-26T03:46:28Z" finished-at="2019-07-26T03:46:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49708" started-at="2019-07-25T10:36:48Z" finished-at="2019-07-25T10:37:38Z">
+    <test name="Default test" duration-ms="25608" started-at="2019-07-26T03:46:28Z" finished-at="2019-07-26T03:46:53Z">
       <class name="xClubsys.BankPayment">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.BankPayment@2b58f754]" name="setUp" is-config="true" duration-ms="29094" started-at="2019-07-25T10:36:48Z" finished-at="2019-07-25T10:37:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.BankPayment@1907874b]" name="setUp" is-config="true" duration-ms="15051" started-at="2019-07-26T03:46:28Z" finished-at="2019-07-26T03:46:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="BankPayment()[pri:0, instance:xClubsys.BankPayment@2b58f754]" name="BankPayment" duration-ms="13792" started-at="2019-07-25T10:37:17Z" finished-at="2019-07-25T10:37:31Z">
+        <test-method status="FAIL" signature="BankPayment()[pri:0, instance:xClubsys.BankPayment@1907874b]" name="BankPayment" duration-ms="9232" started-at="2019-07-26T03:46:43Z" finished-at="2019-07-26T03:46:52Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"UBO Payment"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='mCSB_2_container']/md-list/md-list/md-list-item[12]/a/p"}
   (Session info: chrome=75.0.3770.142)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1247e7f986a7de2e2a385564bd50ea82
-*** Element info: {Using=link text, value=UBO Payment}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1454220c988b2e10e5c878632fa7484
+*** Element info: {Using=xpath, value=//div[@id='mCSB_2_container']/md-list/md-list/md-list-item[12]/a/p}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"UBO Payment"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='mCSB_2_container']/md-list/md-list/md-list-item[12]/a/p"}
   (Session info: chrome=75.0.3770.142)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1247e7f986a7de2e2a385564bd50ea82
-*** Element info: {Using=link text, value=UBO Payment}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1454220c988b2e10e5c878632fa7484
+*** Element info: {Using=xpath, value=//div[@id='mCSB_2_container']/md-list/md-list/md-list-item[12]/a/p}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,10 +45,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at xClubsys.BankPayment.BankPayment(BankPayment.java:133)
+at xClubsys.BankPayment.BankPayment(BankPayment.java:62)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,7 +80,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BankPayment -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.BankPayment@2b58f754]" name="tearDown" is-config="true" duration-ms="886" started-at="2019-07-25T10:37:37Z" finished-at="2019-07-25T10:37:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.BankPayment@1907874b]" name="tearDown" is-config="true" duration-ms="744" started-at="2019-07-26T03:46:53Z" finished-at="2019-07-26T03:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

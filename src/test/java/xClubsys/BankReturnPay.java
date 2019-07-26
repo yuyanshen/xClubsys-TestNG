@@ -9,12 +9,11 @@ import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
-
+@Listeners({TestFailListener.class})
 public class BankReturnPay {
-	  private WebDriver driver;
-	  private String baseUrl;
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
+	  
 	  public static void sleep(double d){
 	      try {
 	          d *= 1000;
@@ -23,11 +22,12 @@ public class BankReturnPay {
 	          // TODO: handle exception
 	      }
 	  }
+	  
+	  WebDriver driver = config.getdriver();
+	  
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-      ChromeOptions options = new ChromeOptions();
-      options.addArguments("--start-maximized");
-      driver = new ChromeDriver(options);
+	  
       driver.get(config.GetBaseUrl()+ "/MembershipAR/AR/CreditCardReturn/List");
       verificationErrors = new StringBuffer();
       driver.findElement(By.id("username")).click();
@@ -46,7 +46,7 @@ public class BankReturnPay {
   {
       try
       {
-          assertEquals("CREDIT CARD", driver.findElement(By.xpath("//md-tab-item")).getText());
+          assertEquals("Giro Payment Return", driver.findElement(By.xpath("//md-tab-item")).getText());
       }
       catch (AssertionError e)
       {
@@ -68,17 +68,17 @@ public class BankReturnPay {
       {
           verificationErrors.append(e.toString());
       }
-      try
+/*      try
       {
           assertEquals("UPLOAD CREDIT", driver.findElement(By.xpath("//div[2]/div/a")).getText());
       }
       catch (AssertionError e)
       {
           verificationErrors.append(e.toString());
-      }
+      }*/
       try
       {
-          assertEquals("UPLOAD GIRO", driver.findElement(By.xpath("//div[2]/div/a[2]")).getText());
+          assertEquals(driver.findElement(By.linkText("UPLOAD UBO")).getText(),"UPLOAD UBO");
       }
       catch (AssertionError e)
       {
@@ -98,6 +98,7 @@ public class BankReturnPay {
       }
       catch (AssertionError e)
       {
+    	  System.out.print("没找到元素");
           verificationErrors.append(e.toString());
       }
       try
