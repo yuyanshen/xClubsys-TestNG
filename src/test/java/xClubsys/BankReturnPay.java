@@ -24,7 +24,7 @@ public class BankReturnPay {
 	  }
 	  
 	  WebDriver driver = config.getdriver();
-	  
+	
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
 	  
@@ -98,7 +98,6 @@ public class BankReturnPay {
       }
       catch (AssertionError e)
       {
-    	  System.out.print("没找到元素");
           verificationErrors.append(e.toString());
       }
       try

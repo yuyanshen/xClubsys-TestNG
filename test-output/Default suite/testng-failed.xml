@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="xClubsys.BankPayment">
+      <class name="xClubsys.BankReturnPay">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="BankPayment"/>
+          <include name="BankReturnPay"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- xClubsys.BankPayment -->
+      </class> <!-- xClubsys.BankReturnPay -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

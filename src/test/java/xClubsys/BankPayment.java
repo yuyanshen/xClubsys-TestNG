@@ -22,7 +22,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 @Listeners({TestFailListener.class})
-@Feature("Membership")
+@Epic("UI Test")
+@Feature("Membership AR")
+@Stories(value= {@Story(value="BankPayment")})
+@Owner("Pisy")
 
 public class BankPayment {
 	  private boolean acceptNextAlert = true;
@@ -40,7 +43,7 @@ public class BankPayment {
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
 	   
-      driver.get(config.GetBaseUrl());
+      driver.get(config.GetBaseUrl()+"/MembershipAR/AR/GeneratePaymentFile/List");
       driver.manage().timeouts().implicitlyWait(MAX_TIMEOUT_IN_SECONDS, TimeUnit.SECONDS);
       verificationErrors = new StringBuffer();
       driver.findElement(By.id("username")).click();
@@ -55,20 +58,9 @@ public class BankPayment {
 
   
   @Test
-  public void BankPayment() throws InterruptedException
+  @Description("BankPayment界面的测试用例")
+  public void BankPayment() throws Exception
   {
-	  driver.findElement(By.xpath("//div[3]/a/div")).click();
-	  sleep(4);
-	  driver.findElement(By.xpath("//div[@id='mCSB_2_container']/md-list/md-list/md-list-item[12]/a/p")).click();
-	  sleep(4);
-      try
-      {
-          assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText(),"Bank Payment");
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       try
       {
           assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[1]")).getText());
@@ -125,14 +117,21 @@ public class BankPayment {
       {
           verificationErrors.append(e.toString());
       }
-      try
-      {
-    	  assertEquals(driver.findElement(By.linkText("UBO Payment")).getText(), "UBO Payment");
-      }
-      catch (AssertionError e)
-      {
+      try {
+          assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/UBOPayment/Create')]")).getText(), "UBO PAYMENT");
+        } catch (Error e) {
           verificationErrors.append(e.toString());
-      }
+        }
+      try {
+          assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/GiroPayment/Create')]")).getText(), "OCBC PAYMENT");
+        } catch (Error e) {
+          verificationErrors.append(e.toString());
+        }
+        try {
+          assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/CreditPayment/Create')]")).getText(), "CREDIT PAYMENT");
+        } catch (Error e) {
+          verificationErrors.append(e.toString());
+        }
   }
 
   @AfterClass(alwaysRun = true)
