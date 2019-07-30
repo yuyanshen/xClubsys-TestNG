@@ -61,77 +61,16 @@ public class BankPayment {
   @Description("BankPayment界面的测试用例")
   public void BankPayment() throws Exception
   {
-      try
-      {
           assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Bank", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Bank Account", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Bank'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Payment Type", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Bank Account'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Payment No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Type'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Credit Card No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment No'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Credit Card Name", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Credit Card No'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try {
+          assertEquals("Bank", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[2]/following::span[1]")).getText());    
+          assertEquals("Bank Account", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Bank'])[1]/following::span[1]")).getText());      
+          assertEquals("Payment Type", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Bank Account'])[1]/following::span[1]")).getText()); 
+          assertEquals("Payment No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Type'])[1]/following::span[1]")).getText());      
+          assertEquals("Credit Card No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment No'])[1]/following::span[1]")).getText());      
+          assertEquals("Credit Card Name", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Credit Card No'])[1]/following::span[1]")).getText());      
           assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/UBOPayment/Create')]")).getText(), "UBO PAYMENT");
-        } catch (Error e) {
-          verificationErrors.append(e.toString());
-        }
-      try {
           assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/GiroPayment/Create')]")).getText(), "OCBC PAYMENT");
-        } catch (Error e) {
-          verificationErrors.append(e.toString());
-        }
-        try {
           assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/CreditPayment/Create')]")).getText(), "CREDIT PAYMENT");
-        } catch (Error e) {
-          verificationErrors.append(e.toString());
-        }
   }
 
   @AfterClass(alwaysRun = true)
