@@ -13,15 +13,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.TestListenerAdapter;
-import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.*;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
-@Listeners({TestFailListener.class})
 @Epic("UI Test")
 @Feature("Membership AR")
 @Stories(value= {@Story(value="BankPayment")})
@@ -38,23 +35,22 @@ public class BankPayment {
 	          // TODO: handle exception
 	      }
 	  }
-	  WebDriver driver = config.getdriver();
-	  static final int MAX_TIMEOUT_IN_SECONDS = 5;
-  @BeforeClass(alwaysRun = true)
-  public void setUp() throws Exception {
-	   
-      driver.get(config.GetBaseUrl()+"/MembershipAR/AR/GeneratePaymentFile/List");
-      driver.manage().timeouts().implicitlyWait(MAX_TIMEOUT_IN_SECONDS, TimeUnit.SECONDS);
-      verificationErrors = new StringBuffer();
-      driver.findElement(By.id("username")).click();
-      driver.findElement(By.id("username")).clear();
-      driver.findElement(By.id("username")).sendKeys("xin@azaas.com");
-      driver.findElement(By.id("password")).click();
-      driver.findElement(By.id("password")).clear();
-      driver.findElement(By.id("password")).sendKeys("K2pass!");
-      driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
-      sleep(10);
-  }  
+	    static final int MAX_TIMEOUT_IN_SECONDS = 5;
+	  WebDriver driver = config.getDriver();
+	    @BeforeClass
+	    public void setUp(){
+
+	   	   driver.get(config.GetBaseUrl()+"/MembershipAR/AR/GeneratePaymentFile/List");
+	       driver.manage().timeouts().implicitlyWait(MAX_TIMEOUT_IN_SECONDS, TimeUnit.SECONDS);
+	       verificationErrors = new StringBuffer();
+	       driver.findElement(By.id("username")).click();
+	       driver.findElement(By.id("username")).clear();
+	       driver.findElement(By.id("username")).sendKeys("xin@azaas.com");
+	       driver.findElement(By.id("password")).click();
+	       driver.findElement(By.id("password")).clear();
+	       driver.findElement(By.id("password")).sendKeys("K2pass!");
+	       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
+	    }
   @Test
   @Description("BankPayment界面的测试用例")
   public void BankPayment() throws Exception
@@ -70,15 +66,6 @@ public class BankPayment {
           assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/GiroPayment/Create')]")).getText(), "OCBC PAYMENT");
           assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/CreditPayment/Create')]")).getText(), "CREDIT PAYMENT");
   }
-  @AfterClass(alwaysRun = true)
-  public void tearDown() throws Exception {
-    driver.quit();
-    String verificationErrorString = verificationErrors.toString();
-    if (!"".equals(verificationErrorString)) {
-      fail(verificationErrorString);
-    }
-  }
-
   private boolean isElementPresent(By by) {
     try {
       driver.findElement(by);

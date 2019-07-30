@@ -9,7 +9,6 @@ import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
-@Listeners({TestFailListener.class})
 public class BankReturnPay {
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
@@ -23,7 +22,7 @@ public class BankReturnPay {
 	      }
 	  }
 	  
-	  WebDriver driver = config.getdriver();
+	  WebDriver driver = config.getDriver();
 	
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {

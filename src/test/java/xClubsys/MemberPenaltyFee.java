@@ -9,7 +9,7 @@ import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
-@Listeners({TestFailListener.class})
+
 public class MemberPenaltyFee {
 	  private WebDriver driver;
 	  private String baseUrl;

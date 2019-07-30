@@ -1,21 +1,46 @@
 package xClubsys;
-import org.openqa.selenium.*;
-import io.qameta.allure.Attachment;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import io.qameta.allure.*;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
+import org.openqa.selenium.*;
 
-public class TestFailListener extends TestListenerAdapter {
+public class TestFailListener extends TestListenerAdapter  {
+	
+	public void onTestFailure(ITestResult tr) {
+		super.onTestFailure(tr);
+		config bt = (config) tr.getInstance();
+		WebDriver driver = bt.getDriver();
+		takePhoto(driver);
+		logCaseStep(tr);
+		exceptedResult(tr);
+	}
+	
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        screenshot();
-    }
-    @Attachment(value = "screen shot",type = "image/png")
-    public byte[]  screenshot(){
-        byte[] screenshotAs = ((TakesScreenshot)config.driver).getScreenshotAs(OutputType.BYTES);
-        return screenshotAs;
-    }
+	@Attachment(value = "失败截图如下：",type = "image/png")
+	public byte[]  takePhoto(WebDriver driver){
+		byte[] screenshotAs = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+		return screenshotAs;
+	}
+
+	/**
+	 * 打印测试步骤
+	 * @param tr
+	 */
+	@Attachment(value = "操作步骤如下：")
+	public String logCaseStep(ITestResult tr){
+		String step = "1、打开浏览器  2、输入百度地址";
+		return step;
+	}
+
+	/**
+	 * 打印测试步骤
+	 * @param tr
+	 */
+	@Attachment(value = "期望结果如下：")
+	public String exceptedResult(ITestResult tr){
+		String result = "结果";
+		return result;
+	}
 }
