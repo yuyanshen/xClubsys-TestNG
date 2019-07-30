@@ -13,8 +13,6 @@ public class TestFailListener extends TestListenerAdapter  {
 		config bt = (config) tr.getInstance();
 		WebDriver driver = bt.getDriver();
 		takePhoto(driver);
-		logCaseStep(tr);
-		exceptedResult(tr);
 	}
 	
 
@@ -22,25 +20,5 @@ public class TestFailListener extends TestListenerAdapter  {
 	public byte[]  takePhoto(WebDriver driver){
 		byte[] screenshotAs = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 		return screenshotAs;
-	}
-
-	/**
-	 * 打印测试步骤
-	 * @param tr
-	 */
-	@Attachment(value = "操作步骤如下：")
-	public String logCaseStep(ITestResult tr){
-		String step = "1、打开浏览器  2、输入百度地址";
-		return step;
-	}
-
-	/**
-	 * 打印测试步骤
-	 * @param tr
-	 */
-	@Attachment(value = "期望结果如下：")
-	public String exceptedResult(ITestResult tr){
-		String result = "结果";
-		return result;
 	}
 }
