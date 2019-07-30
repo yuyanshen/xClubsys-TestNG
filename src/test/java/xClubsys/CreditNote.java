@@ -9,7 +9,7 @@ import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
-
+@Listeners({TestFailListener.class})
 public class CreditNote {
 	  private WebDriver driver;
 	  private String baseUrl;
@@ -23,6 +23,7 @@ public class CreditNote {
 	          // TODO: handle exception
 	      }
 	  }
+	  
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
       ChromeOptions options = new ChromeOptions();

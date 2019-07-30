@@ -54,9 +54,7 @@ public class BankPayment {
       driver.findElement(By.id("password")).sendKeys("K2pass!");
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='lock'])[1]/following::span[1]")).click();
       sleep(10);
-  }
-
-  
+  }  
   @Test
   @Description("BankPayment界面的测试用例")
   public void BankPayment() throws Exception
@@ -68,11 +66,10 @@ public class BankPayment {
           assertEquals("Payment No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Type'])[1]/following::span[1]")).getText());      
           assertEquals("Credit Card No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment No'])[1]/following::span[1]")).getText());      
           assertEquals("Credit Card Name", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Credit Card No'])[1]/following::span[1]")).getText());      
-          assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/UBOPayment/Create')]")).getText(), "UBO PAYMENT");
+          assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/UBOPayment/Create')]")).getText(), "UOB PAYMENT");
           assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/GiroPayment/Create')]")).getText(), "OCBC PAYMENT");
           assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/CreditPayment/Create')]")).getText(), "CREDIT PAYMENT");
   }
-
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
     driver.quit();

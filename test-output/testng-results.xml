@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17446" started-at="2019-07-30T06:04:52Z" finished-at="2019-07-30T06:05:10Z">
+  <suite name="Default suite" duration-ms="28728" started-at="2019-07-30T08:32:18Z" finished-at="2019-07-30T08:32:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17446" started-at="2019-07-30T06:04:52Z" finished-at="2019-07-30T06:05:10Z">
+    <test name="Default test" duration-ms="28728" started-at="2019-07-30T08:32:18Z" finished-at="2019-07-30T08:32:47Z">
       <class name="xClubsys.BankPayment">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.BankPayment@7ff35a3f]" name="setUp" is-config="true" duration-ms="15160" started-at="2019-07-30T06:04:52Z" finished-at="2019-07-30T06:05:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.BankPayment@102ecc22]" name="setUp" is-config="true" duration-ms="26365" started-at="2019-07-30T08:32:18Z" finished-at="2019-07-30T08:32:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="BankPayment()[pri:0, instance:xClubsys.BankPayment@7ff35a3f]" name="BankPayment" duration-ms="490" started-at="2019-07-30T06:05:07Z" finished-at="2019-07-30T06:05:08Z">
+        <test-method status="FAIL" signature="BankPayment()[pri:0, instance:xClubsys.BankPayment@102ecc22]" name="BankPayment" duration-ms="445" started-at="2019-07-30T08:32:45Z" finished-at="2019-07-30T08:32:45Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [UBO PAYMENT] but found [UOB PAYMENT]]]>
@@ -56,7 +56,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BankPayment -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.BankPayment@7ff35a3f]" name="tearDown" is-config="true" duration-ms="932" started-at="2019-07-30T06:05:09Z" finished-at="2019-07-30T06:05:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.BankPayment@102ecc22]" name="tearDown" is-config="true" duration-ms="874" started-at="2019-07-30T08:32:46Z" finished-at="2019-07-30T08:32:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
