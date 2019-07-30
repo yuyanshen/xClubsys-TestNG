@@ -48,112 +48,21 @@ public class StatementEnquiry {
   {
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='设置'])[1]/following::p[8]")).click();
       Thread.sleep(3000);
-      try
-      {
           assertEquals("Statement", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("STATEMENTS SETTING", driver.findElement(By.cssSelector("a.md-warn.md-button.md-ink-ripple")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("SEARCH", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Is Principal Member'])[1]/following::button[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Statements", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Print'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Email", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Membership Type", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Payment Mode", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership Type'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Debit", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Mode'])[3]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Credit", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Debit'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Outstanding Balance", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Credit'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Due Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Outstanding Balance'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Is Principal Member'])[1]/following::button[1]")).click();
       Thread.sleep(20000);
-      try
-      {
           assertEquals("MONTH END CLOSING", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Statements'])[1]/following::button[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
   } 
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
