@@ -69,7 +69,8 @@ public class PaymentHistory {
           assertEquals("VOID", driver.findElement(By.xpath("//md-tab-item[5]")).getText());
           assertEquals("DRAFT", driver.findElement(By.xpath("//md-tab-item[2]")).getText());
           assertEquals("Payment Code", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[1]/following::span[1]")).getText());
-          assertEquals("Batch Id", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Code'])[2]/following::span[1]")).getText());ertEquals("Cheque Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Id'])[1]/following::span[1]")).getText());
+          assertEquals("Batch Id", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Code'])[2]/following::span[1]")).getText());
+          assertEquals("Cheque Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Id'])[1]/following::span[1]")).getText());
           assertEquals("Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Cheque Number'])[1]/following::span[1]")).getText());
           assertEquals("Balance", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Amount'])[1]/following::span[1]")).getText());
           assertEquals("Create Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Balance'])[1]/following::span[1]")).getText());
