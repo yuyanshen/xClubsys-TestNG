@@ -48,120 +48,22 @@ public class PostingGL {
   {
       driver.findElement(By.cssSelector("[ng-if='sub\\.subMenus\\.length']:nth-child(2) ._md:nth-of-type(10) .ng-binding")).click();
       Thread.sleep(3000);
-      try
-      {
           assertEquals("Posting GL History", driver.findElement(By.xpath("//div[@id='top']//h2[@class='ng-binding']")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("DRAFT", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Draft'])[2]/preceding::md-tab-item[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("TRANSFERRED", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Transferred'])[2]/preceding::md-tab-item[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Financial Month", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Description", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Financial Month'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Debit", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Credit", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Debit'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Credit'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("NEW POSTING", driver.findElement(By.xpath("//a[contains(text(),'New Posting')]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       driver.findElement(By.xpath("//md-tab-item[2]")).click();
       Thread.sleep(3000);
-      try
-      {
           assertEquals("Financial Month", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Description", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Financial Month'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Debit", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Credit", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Debit'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Credit'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
   }  
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {

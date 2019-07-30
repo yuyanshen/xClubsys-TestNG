@@ -46,438 +46,66 @@ public class PaymentHistory {
   @Test
   public void PaymentHistory() throws InterruptedException
   {
-      try
-      {
           assertEquals("Payment History List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("NEW PAYMENT", driver.findElement(By.cssSelector("a.md-warn.md-button.md-ink-ripple")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("PAY FOR REMINDER", driver.findElement(By.xpath("//div[2]/div/a[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("ALL", driver.findElement(By.xpath("//md-tab-item")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Payment No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment No'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Payment Code", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Batch Id", driver.findElement(By.xpath("//th[5]/span")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Cheque Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Id'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Create Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Cheque Number'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Effective Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Create Date'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Effective Date'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Balance", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Amount'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Status", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Balance'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       driver.findElement(By.xpath("//md-tab-item[2]")).click();
       Thread.sleep(5000);
-      try
-      {
           assertEquals("Payment No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Transform'])[1]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment No'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("APPROVAL", driver.findElement(By.xpath("//md-tab-item[3]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("REJECTED", driver.findElement(By.xpath("//md-tab-item[4]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("VOID", driver.findElement(By.xpath("//md-tab-item[5]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("DRAFT", driver.findElement(By.xpath("//md-tab-item[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Payment Code", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Batch Id", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Code'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
-          assertEquals("Cheque Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Id'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
+          assertEquals("Batch Id", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Code'])[2]/following::span[1]")).getText());ertEquals("Cheque Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Id'])[1]/following::span[1]")).getText());
           assertEquals("Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Cheque Number'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Balance", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Amount'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Create Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Balance'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Effective Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Create Date'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       driver.findElement(By.xpath("//md-tab-item[3]")).click();
       Thread.sleep(5000);
-      try
-      {
           assertEquals("Payment No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment No'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Payment Code", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Batch Id", driver.findElement(By.xpath("//th[5]/span")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Cheque Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Id'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Cheque Number'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Balance", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Amount'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Create Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Balance'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Effective Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Create Date'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       driver.findElement(By.xpath("//md-tab-item[4]")).click();
       Thread.sleep(5000);
-      try
-      {
           assertEquals("Payment No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment No'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Payment Code", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Batch Id", driver.findElement(By.xpath("//th[5]/span")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Cheque Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Id'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Cheque Number'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Balance", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Amount'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Create Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Balance'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Effective Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Create Date'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       driver.findElement(By.xpath("//md-tab-item[5]")).click();
       Thread.sleep(5000);
-      try
-      {
           assertEquals("Payment No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Member", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment No'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Payment Code", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Batch Id", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payment Code'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Cheque Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Batch Id'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Cheque Number'])[2]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Balance", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Amount'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Void Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Balance'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
   } 
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {

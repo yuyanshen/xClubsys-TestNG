@@ -44,30 +44,9 @@ public class BankReturnPay {
   @Test
   public void BankReturnPay() throws InterruptedException
   {
-      try
-      {
           assertEquals("Giro Payment Return", driver.findElement(By.xpath("//md-tab-item")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("GIRO", driver.findElement(By.xpath("//md-tab-item[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Credit Card Return", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
 /*      try
       {
           assertEquals("UPLOAD CREDIT", driver.findElement(By.xpath("//div[2]/div/a")).getText());
@@ -76,112 +55,21 @@ public class BankReturnPay {
       {
           verificationErrors.append(e.toString());
       }*/
-      try
-      {
           assertEquals(driver.findElement(By.linkText("UPLOAD UBO")).getText(),"UPLOAD UBO");
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Payee No", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Giro'])[2]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("org ID", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Payee No'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("File Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='org ID'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Currency Code", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File Date'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Total Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Currency Code'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Actual Total Amount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Total Amount'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      driver.findElement(By.xpath("//md-tab-item[2]")).click();
-      Thread.sleep(5000);
-      try
-      {
+          driver.findElement(By.xpath("//md-tab-item[2]")).click();
+      	  Thread.sleep(5000);
           assertEquals("Type Code", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Giro'])[2]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Clearing", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Type Code'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Report Generation Date", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clearing'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Record Type", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Report Generation Date'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Total Number", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Record Type'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("TotalAmount", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Total Number'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
   }
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {

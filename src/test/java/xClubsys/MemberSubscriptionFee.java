@@ -46,131 +46,25 @@ public class MemberSubscriptionFee {
   @Test
   public void MemberSubscriptionFee() throws InterruptedException
   {
-
-      try
-      {
-          assertEquals("Member Subscription Fee List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
+      assertEquals("Member Subscription Fee List", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]")).getText());
           assertEquals("ALL", driver.findElement(By.xpath("//md-tab-item")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("DRAFT", driver.findElement(By.xpath("//md-tab-item[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("POSTED", driver.findElement(By.xpath("//md-tab-item[3]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Operator", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Posted'])[2]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Month", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Operator'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Operator Time", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Month'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Status", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Operator Time'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("POST SUBSCRIPTION FEE", driver.findElement(By.cssSelector("a.md-warn.md-button.md-ink-ripple")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       driver.findElement(By.xpath("//md-tab-item[2]")).click();
       Thread.sleep(5000);
-      try
-      {
           assertEquals("Operator", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Posted'])[2]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Month", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Operator'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Operator Time", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Month'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
       driver.findElement(By.xpath("//md-tab-item[3]")).click();
       Thread.sleep(5000);
-      try
-      {
           assertEquals("Operator", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Posted'])[2]/following::span[2]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Month", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Operator'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
-      try
-      {
           assertEquals("Operator Time", driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Month'])[1]/following::span[1]")).getText());
-      }
-      catch (AssertionError e)
-      {
-          verificationErrors.append(e.toString());
-      }
   }  
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
