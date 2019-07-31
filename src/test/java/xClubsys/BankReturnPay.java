@@ -1,10 +1,18 @@
 package xClubsys;
 
 import org.testng.annotations.*;
+
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Stories;
+import io.qameta.allure.Story;
+
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.*;
-
+@Feature("Membership AR")
+@Owner("Pisy")
+@Stories(value = { @Story(value = "BankReturnPay") })
 public class BankReturnPay extends config {
 	@Test
 	public void BankReturnPay() throws InterruptedException {

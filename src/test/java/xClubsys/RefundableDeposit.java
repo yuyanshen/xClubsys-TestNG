@@ -1,7 +1,4 @@
 package xClubsys;
-import java.util.regex.Pattern;
-import java.sql.Driver;
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 
 import io.qameta.allure.Feature;
@@ -12,8 +9,6 @@ import io.qameta.allure.Story;
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.*;
-import org.openqa.selenium.support.ui.Select;
 @Feature("Membership AR")
 @Owner("Pisy")
 @Stories(value = { @Story(value = "RefundableDeposit") })

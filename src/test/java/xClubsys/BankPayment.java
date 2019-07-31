@@ -1,18 +1,14 @@
 package xClubsys;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 
 import io.qameta.allure.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import static org.testng.Assert.*;
-import org.openqa.selenium.*;
 
-@Epic("UI Test")
 @Feature("Membership AR")
-@Stories(value = { @Story(value = "BankPayment") })
 @Owner("Pisy")
+@Stories(value = { @Story(value = "BankPayment") })
 
 public class BankPayment extends config {
 
