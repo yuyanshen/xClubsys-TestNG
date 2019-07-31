@@ -8,13 +8,13 @@ import static org.testng.Assert.*;
 
 @Feature("Membership AR")
 @Owner("Pisy")
-@Stories(value = { @Story(value = "BankPayment") })
+@Stories(value = { @Story(value = "GiroPayment") })
 
-public class BankPayment extends config {
+public class GiroPayment extends config {
 
 	@Test
-	@Description("BankPayment界面的测试用例")
-	public void BankPayment() throws Exception {
+	@Description("Giro Payment界面的测试用例")
+	public void GiroPayment() throws Exception {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/GeneratePaymentFile/List");
 		sleep(10);
 		assertEquals("Member",
@@ -46,7 +46,7 @@ public class BankPayment extends config {
 				.getText());
 		assertEquals(
 				driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/UBOPayment/Create')]")).getText(),
-				"UOB1 PAYMENT");
+				"UOB PAYMENT");
 		assertEquals(
 				driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/GiroPayment/Create')]")).getText(),
 				"OCBC PAYMENT");

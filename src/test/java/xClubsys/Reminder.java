@@ -20,7 +20,7 @@ public class Reminder extends config {
 		sleep(8);
 		assertEquals("Reminders",
 				driver.findElement(By.xpath(
-						"(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]"))
+						"//div[@id='top']//h2[@class='ng-binding']"))
 						.getText());
 		assertEquals("Member",
 				driver.findElement(By
@@ -74,6 +74,8 @@ public class Reminder extends config {
 		driver.findElement(By.xpath("//span/md-icon")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//div[2]/div/a[2]")).click();
+		sleep(2);
+
 		Thread.sleep(4000);
 		assertEquals("SEARCH", driver.findElement(By.xpath(
 				"(.//*[normalize-space(text()) and normalize-space(.)='Included Sent Reminder'])[1]/following::button[1]"))

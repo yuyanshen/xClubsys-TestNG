@@ -2,29 +2,46 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32603" started-at="2019-07-30T10:07:37Z" finished-at="2019-07-30T10:08:10Z">
+  <suite name="Default suite" duration-ms="44811" started-at="2019-07-31T07:57:08Z" finished-at="2019-07-31T07:57:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32603" started-at="2019-07-30T10:07:37Z" finished-at="2019-07-30T10:08:10Z">
-      <class name="xClubsys.BankPayment">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.BankPayment@32cb636e]" name="setUp" is-config="true" duration-ms="20080" started-at="2019-07-30T10:07:37Z" finished-at="2019-07-30T10:07:57Z">
+    <test name="Default test" duration-ms="44811" started-at="2019-07-31T07:57:08Z" finished-at="2019-07-31T07:57:53Z">
+      <class name="xClubsys.Reminder">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.Reminder@3af17be2]" name="setUp" is-config="true" duration-ms="23967" started-at="2019-07-31T07:57:08Z" finished-at="2019-07-31T07:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="BankPayment()[pri:0, instance:xClubsys.BankPayment@32cb636e]" name="BankPayment" duration-ms="10837" started-at="2019-07-30T10:07:57Z" finished-at="2019-07-30T10:08:08Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="Reminder()[pri:0, instance:xClubsys.Reminder@3af17be2]" name="Reminder" duration-ms="18546" started-at="2019-07-31T07:57:32Z" finished-at="2019-07-31T07:57:51Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[expected [UOB1 PAYMENT] but found [UOB PAYMENT]]]>
+              <![CDATA[unexpected alert open: {Alert text : Are you sure you want to leave this page?}
+  (Session info: chrome=75.0.3770.142): 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51840}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 782cf907d44c147a9cedd28a9a8190b8
+*** Element info: {Using=xpath, value=//div[2]/div/a[2]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [UOB1 PAYMENT] but found [UOB PAYMENT]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at xClubsys.BankPayment.BankPayment(BankPayment.java:51)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Are you sure you want to leave this page?}
+  (Session info: chrome=75.0.3770.142): 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51840}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 782cf907d44c147a9cedd28a9a8190b8
+*** Element info: {Using=xpath, value=//div[2]/div/a[2]}
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at xClubsys.Reminder.Reminder(Reminder.java:76)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,15 +69,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BankPayment -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.BankPayment@32cb636e]" name="tearDown" is-config="true" duration-ms="804" started-at="2019-07-30T10:08:09Z" finished-at="2019-07-30T10:08:10Z">
+        </test-method> <!-- Reminder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.Reminder@3af17be2]" name="tearDown" is-config="true" duration-ms="827" started-at="2019-07-31T07:57:52Z" finished-at="2019-07-31T07:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- xClubsys.BankPayment -->
+      </class> <!-- xClubsys.Reminder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

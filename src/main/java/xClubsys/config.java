@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.*;
 
 @Listeners({TestFailListener.class})
 public class config {
-	  private boolean acceptNextAlert = true;
+	  protected boolean acceptNextAlert = true;
 	  public static void sleep(double d){
 	      try {
 	          d *= 1000;
@@ -81,7 +81,7 @@ public class config {
       }
     }
 
-    private String closeAlertAndGetItsText() {
+    protected String closeAlertAndGetItsText() {
       try {
         Alert alert = driver.switchTo().alert();
         String alertText = alert.getText();

@@ -7,7 +7,6 @@ import org.testng.TestListenerAdapter;
 import org.openqa.selenium.*;
 
 public class TestFailListener extends TestListenerAdapter  {
-	
 	public void onTestFailure(ITestResult tr) {
 		super.onTestFailure(tr);
 		config bt = (config) tr.getInstance();
@@ -15,7 +14,6 @@ public class TestFailListener extends TestListenerAdapter  {
 		takePhoto(driver);
 	}
 	
-
 	@Attachment(value = "失败截图如下：",type = "image/png")
 	public byte[]  takePhoto(WebDriver driver){
 		byte[] screenshotAs = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);

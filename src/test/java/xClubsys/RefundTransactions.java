@@ -17,7 +17,7 @@ public class RefundTransactions extends config {
 	@Test
 	public void RefundTransactions() throws InterruptedException {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/RefundTransaction/List");
-		sleep(10);
+		sleep(5);
 		assertEquals("Refund Transactions", driver.findElement(By.xpath(
 				"(.//*[normalize-space(text()) and normalize-space(.)='Refund Transaction'])[2]/following::h2[1]"))
 				.getText());
@@ -45,7 +45,7 @@ public class RefundTransactions extends config {
 				.getText());
 		assertEquals("NEW REFUND TRANSACTION", driver.findElement(By.xpath("//div[2]/div/a")).getText());
 		driver.findElement(By.xpath("//div[2]/div/a")).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		assertEquals("Create Refund Transaction",
 				driver.findElement(By.xpath(
 						"(.//*[normalize-space(text()) and normalize-space(.)='Membership AR'])[2]/following::h2[1]"))

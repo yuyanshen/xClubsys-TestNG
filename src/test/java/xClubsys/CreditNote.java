@@ -18,7 +18,7 @@ public class CreditNote extends config {
 	public void CreditNote() throws InterruptedException {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/CreditNote/List");
 		sleep(8);
-		assertEquals(driver.findElement(By.cssSelector("h2.ng-binding")).getText(), "Import your credit notes");
+		assertEquals(driver.findElement(By.cssSelector("h2.ng-binding")).getText(), "Credit Note List");
 		assertEquals(driver.findElement(By.xpath("//md-tab-item")).getText(), "ALL");
 		assertEquals(driver.findElement(By.xpath("//md-tab-item[2]")).getText(), "DRAFT");
 		assertEquals(driver.findElement(By.xpath("//md-tab-item[3]")).getText(), "AWAITING PAYMENT");
@@ -224,14 +224,12 @@ public class CreditNote extends config {
 						"(.//*[normalize-space(text()) and normalize-space(.)='Import'])[1]/following::button[1]"))
 						.getText());
 	}
-
 	@Test
 	public void CreditNote_NewCreaditNote() {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/CreditNote/Create?invoiceType=1&edit=1");
-		sleep(8);
+		sleep(10);
 		assertEquals(driver
-				.findElement(By.xpath(
-						"(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]"))
+				.findElement(By.cssSelector("h2.ng-binding"))
 				.getText(), "New Credit Note");
 		assertEquals(driver
 				.findElement(By
