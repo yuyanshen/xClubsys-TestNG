@@ -8,7 +8,7 @@ import io.qameta.allure.Stories;
 import io.qameta.allure.Story;
 
 import static org.testng.Assert.*;
-
+import org.testng.annotations.Test;
 import org.openqa.selenium.*;
 @Feature("Membership AR")
 @Owner("Pisy")

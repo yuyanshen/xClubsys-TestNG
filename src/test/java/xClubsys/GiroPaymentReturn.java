@@ -2,8 +2,6 @@ package xClubsys;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.annotations.*;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;

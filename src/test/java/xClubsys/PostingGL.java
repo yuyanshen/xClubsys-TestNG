@@ -6,7 +6,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Stories;
 import io.qameta.allure.Story;
-
+import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.*;

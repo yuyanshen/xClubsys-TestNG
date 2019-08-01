@@ -1,7 +1,7 @@
 package xClubsys;
 
 import org.testng.annotations.*;
-
+import org.testng.annotations.Test;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Stories;
