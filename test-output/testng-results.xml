@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44811" started-at="2019-07-31T07:57:08Z" finished-at="2019-07-31T07:57:53Z">
+  <suite name="Default suite" duration-ms="41641" started-at="2019-08-01T06:29:39Z" finished-at="2019-08-01T06:30:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44811" started-at="2019-07-31T07:57:08Z" finished-at="2019-07-31T07:57:53Z">
+    <test name="Default test" duration-ms="41641" started-at="2019-08-01T06:29:39Z" finished-at="2019-08-01T06:30:21Z">
       <class name="xClubsys.Reminder">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.Reminder@3af17be2]" name="setUp" is-config="true" duration-ms="23967" started-at="2019-07-31T07:57:08Z" finished-at="2019-07-31T07:57:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.Reminder@46e8a539]" name="setUp" is-config="true" duration-ms="20937" started-at="2019-08-01T06:29:39Z" finished-at="2019-08-01T06:30:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="Reminder()[pri:0, instance:xClubsys.Reminder@3af17be2]" name="Reminder" duration-ms="18546" started-at="2019-07-31T07:57:32Z" finished-at="2019-07-31T07:57:51Z">
+        <test-method status="FAIL" signature="Reminder()[pri:0, instance:xClubsys.Reminder@46e8a539]" name="Reminder" duration-ms="18639" started-at="2019-08-01T06:30:00Z" finished-at="2019-08-01T06:30:19Z">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[unexpected alert open: {Alert text : Are you sure you want to leave this page?}
   (Session info: chrome=75.0.3770.142): 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.10.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51840}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 782cf907d44c147a9cedd28a9a8190b8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2afc593d8b830c50104e083e535f8575
 *** Element info: {Using=xpath, value=//div[2]/div/a[2]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Are you sure you want to leave this page?}
   (Session info: chrome=75.0.3770.142): 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'DESKTOP-ECSMUSF', ip: '192.168.10.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51840}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 782cf907d44c147a9cedd28a9a8190b8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\K2User\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2afc593d8b830c50104e083e535f8575
 *** Element info: {Using=xpath, value=//div[2]/div/a[2]}
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -73,7 +73,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reminder -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.Reminder@3af17be2]" name="tearDown" is-config="true" duration-ms="827" started-at="2019-07-31T07:57:52Z" finished-at="2019-07-31T07:57:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.Reminder@46e8a539]" name="tearDown" is-config="true" duration-ms="789" started-at="2019-08-01T06:30:20Z" finished-at="2019-08-01T06:30:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

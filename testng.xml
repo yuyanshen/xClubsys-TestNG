@@ -2,14 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="xClubsys.GiroPaymentReturn"/>
-      <class name="xClubsys.RepeatingDebitNote"/>
-      <class name="xClubsys.DebitNoteModule"/>
-      <class name="xClubsys.RefundableDeposit"/>
-      <class name="xClubsys.MemberPenaltyFee"/>
-      <class name="xClubsys.CreditNote"/>
-      <class name="xClubsys.config"/>
-    </classes>
+    <packages>
+      <package name="xClubsys"/>
+    </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

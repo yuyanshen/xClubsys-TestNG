@@ -1,19 +1,21 @@
 package xClubsys;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.*;
-
-import io.qameta.allure.*;
-import org.openqa.selenium.By;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Stories;
+import io.qameta.allure.Story;
 import static org.testng.Assert.*;
+import org.openqa.selenium.*;
 
 @Feature("Membership AR")
 @Owner("Pisy")
 @Stories(value = { @Story(value = "GiroPayment") })
-
 public class GiroPayment extends config {
 
-	@Test
-	@Description("Giro Payment界面的测试用例")
+@Test
 	public void GiroPayment() throws Exception {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/GeneratePaymentFile/List");
 		sleep(10);

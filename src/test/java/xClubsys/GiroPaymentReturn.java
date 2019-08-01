@@ -1,5 +1,9 @@
 package xClubsys;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.*;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
@@ -17,50 +21,50 @@ public class GiroPaymentReturn extends config {
 	public void BankReturnPay() throws InterruptedException {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/CreditCardReturn/List");
 		sleep(8);
-		assertEquals(driver.findElement(By.cssSelector("h2.ng-binding")).getText(), "Giro Payment Return");
-		assertEquals(driver.findElement(By.xpath("//md-tab-item")).getText(), "UOB");
-		assertEquals(driver.findElement(By.xpath("//md-tab-item[2]")).getText(), "OCBC");
-		assertEquals(driver.findElement(By.xpath("//md-tab-item[3]")).getText(), "CREDIT CARD");
-		assertEquals(driver.findElement(By.xpath("//md-tab-item[4]")).getText(), "NEW CREDIT CARD");
-		assertEquals(driver.findElement(By.xpath("//th[2]/span")).getText(), "BIC Code");
-		assertEquals(driver.findElement(By.xpath("//th[3]/span")).getText(), "Account No");
-		assertEquals(driver.findElement(By.xpath("//th[4]/span")).getText(), "Account Name");
-		assertEquals(driver.findElement(By.xpath("//th[5]/span")).getText(), "Total Number");
-		assertEquals(driver.findElement(By.xpath("//th[6]/span")).getText(), "Total Amount");
+		AssertJUnit.assertEquals(driver.findElement(By.cssSelector("h2.ng-binding")).getText(), "Giro Payment Return");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//md-tab-item")).getText(), "UOB");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//md-tab-item[2]")).getText(), "OCBC");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//md-tab-item[3]")).getText(), "CREDIT CARD");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//md-tab-item[4]")).getText(), "NEW CREDIT CARD");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[2]/span")).getText(), "BIC Code");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[3]/span")).getText(), "Account No");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[4]/span")).getText(), "Account Name");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[5]/span")).getText(), "Total Number");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[6]/span")).getText(), "Total Amount");
 		driver.findElement(By.xpath("//md-tab-item[2]")).click();
 		sleep(4);
-		assertEquals(driver.findElement(By.xpath("//th[2]/span")).getText(), "Type Code");
-		assertEquals(driver.findElement(By.xpath("//th[3]/span")).getText(), "Clearing");
-		assertEquals(driver.findElement(By.xpath("//th[4]/span")).getText(), "Report Generation Date");
-		assertEquals(driver.findElement(By.xpath("//th[5]/span")).getText(), "Record Type");
-		assertEquals(driver.findElement(By.xpath("//th[6]/span")).getText(), "Total Number");
-		assertEquals(driver.findElement(By.xpath("//th[7]/span")).getText(), "Total Amount");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[2]/span")).getText(), "Type Code");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[3]/span")).getText(), "Clearing");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[4]/span")).getText(), "Report Generation Date");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[5]/span")).getText(), "Record Type");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[6]/span")).getText(), "Total Number");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[7]/span")).getText(), "Total Amount");
 		driver.findElement(By.xpath("//md-tab-item[3]")).click();
 		sleep(4);
-		assertEquals(driver.findElement(By.xpath("//th[2]/span")).getText(), "Payee No");
-		assertEquals(driver.findElement(By.xpath("//th[3]/span")).getText(), "org ID");
-		assertEquals(driver.findElement(By.xpath("//th[4]/span")).getText(), "File Date");
-		assertEquals(driver.findElement(By.xpath("//th[5]/span")).getText(), "Currency Code");
-		assertEquals(driver.findElement(By.xpath("//th[6]/span")).getText(), "Total Amount");
-		assertEquals(driver.findElement(By.xpath("//th[7]/span")).getText(), "Actual Total Amount");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[2]/span")).getText(), "Payee No");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[3]/span")).getText(), "org ID");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[4]/span")).getText(), "File Date");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[5]/span")).getText(), "Currency Code");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[6]/span")).getText(), "Total Amount");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[7]/span")).getText(), "Actual Total Amount");
 		driver.findElement(By.xpath("//md-tab-item[4]")).click();
 		sleep(4);
-		assertEquals(driver.findElement(By.xpath("//th/span")).getText(), "Member ID");
-		assertEquals(driver.findElement(By.xpath("//th[2]/span")).getText(), "Card No");
-		assertEquals(driver.findElement(By.xpath("//th[3]/span")).getText(), "CVV2");
-		assertEquals(driver.findElement(By.xpath("//th[4]/span")).getText(), "Transaction Date");
-		assertEquals(driver.findElement(By.xpath("//th[5]/span")).getText(), "Last CreditCard Issue Date");
-		assertEquals(driver.findElement(By.xpath("//th[6]/span")).getText(), "Expiry Date");
-		assertEquals(driver.findElement(By.xpath("//th[7]/span")).getText(), "Status");
-		assertEquals(
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th/span")).getText(), "Member ID");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[2]/span")).getText(), "Card No");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[3]/span")).getText(), "CVV2");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[4]/span")).getText(), "Transaction Date");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[5]/span")).getText(), "Last CreditCard Issue Date");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[6]/span")).getText(), "Expiry Date");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//th[7]/span")).getText(), "Status");
+		AssertJUnit.assertEquals(
 				driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/GiroUpload/Create')]")).getText(),
 				"UPLOAD OCBC");
-		assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/UBOUpload/Create')]")).getText(),
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/UBOUpload/Create')]")).getText(),
 				"UPLOAD UOB");
-		assertEquals(
+		AssertJUnit.assertEquals(
 				driver.findElement(By.xpath("//a[contains(@href, '/MembershipAR/AR/CreditUpload/Create')]")).getText(),
 				"UPLOAD CREDIT");
-		assertEquals(
+		AssertJUnit.assertEquals(
 				driver.findElement(By.xpath("//a[contains(@href, 'MembershipAR/AR/NewCreditCard/Create')]")).getText(),
 				"UPLOAD NEW CREDIT CARD");
 	}
@@ -69,26 +73,26 @@ public class GiroPaymentReturn extends config {
 	public void UPLOADUOB() throws InterruptedException {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/UBOUpload/Create");
 		sleep(5);
-		assertEquals(driver
+		AssertJUnit.assertEquals(driver
 				.findElement(By.xpath(
 						"//div[@id='top']//h2[@class='ng-binding']"))
 				.getText(), "UOB Upload");
-		assertEquals(driver
+		AssertJUnit.assertEquals(driver
 				.findElement(By.xpath(
 						"(.//*[normalize-space(text()) and normalize-space(.)='file_upload'])[1]/following::span[1]"))
 				.getText(), "UPLOAD UOB FILE");
-		assertEquals(driver.findElement(By.xpath(
+		AssertJUnit.assertEquals(driver.findElement(By.xpath(
 				"(.//*[normalize-space(text()) and normalize-space(.)='only .txt can be uploaded'])[1]/following::span[2]"))
 				.getText(), "File Name");
-		assertEquals(driver
+		AssertJUnit.assertEquals(driver
 				.findElement(By.xpath(
 						"(.//*[normalize-space(text()) and normalize-space(.)='File Name'])[1]/following::span[1]"))
 				.getText(), "Date");
-		assertEquals(driver
+		AssertJUnit.assertEquals(driver
 				.findElement(By
 						.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]"))
 				.getText(), "CANCEL");
-		assertEquals(driver.findElement(By.xpath(
+		AssertJUnit.assertEquals(driver.findElement(By.xpath(
 				"//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']/md-card-content[2]//div[@class='flex']/button[1]"))
 				.getText(), "SAVE");
 	}
@@ -97,26 +101,26 @@ public class GiroPaymentReturn extends config {
 	public void UPLOADOCBC() throws InterruptedException {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/GiroUpload/Create");
 		sleep(5);
-		assertEquals(driver
+		AssertJUnit.assertEquals(driver
 				.findElement(By.xpath(
 						"//div[@id='top']//h2[@class='ng-binding']"))
 				.getText(), "OCBC Upload");
-		assertEquals(driver
+		AssertJUnit.assertEquals(driver
 				.findElement(By.xpath(
 						"(.//*[normalize-space(text()) and normalize-space(.)='file_upload'])[1]/following::span[1]"))
 				.getText(), "UPLOAD OCBC FILE");
-		assertEquals(driver.findElement(By.xpath(
+		AssertJUnit.assertEquals(driver.findElement(By.xpath(
 				"(.//*[normalize-space(text()) and normalize-space(.)='only .txt can be uploaded'])[1]/following::span[2]"))
 				.getText(), "File Name");
-		assertEquals(driver
+		AssertJUnit.assertEquals(driver
 				.findElement(By.xpath(
 						"(.//*[normalize-space(text()) and normalize-space(.)='File Name'])[1]/following::span[1]"))
 				.getText(), "Date");
-		assertEquals(driver
+		AssertJUnit.assertEquals(driver
 				.findElement(By
 						.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]"))
 				.getText(), "CANCEL");
-		assertEquals(driver.findElement(By.xpath(
+		AssertJUnit.assertEquals(driver.findElement(By.xpath(
 				"//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']/md-card-content[2]//div[@class='flex']/button[1]"))
 				.getText(), "SAVE");
 	}
@@ -125,24 +129,24 @@ public class GiroPaymentReturn extends config {
 	public void UPLOADCREDIT() throws InterruptedException {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/CreditUpload/Create");
 		sleep(5);
-	    assertEquals(driver.findElement(By.xpath("//div[@id='top']//h2[@class='ng-binding']")).getText(), "Credit Card Upload");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='file_upload'])[1]/following::span[1]")).getText(), "UPLOAD CREDIT CARD FILE");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='only .txt can be uploaded'])[1]/following::span[2]")).getText(), "File Name");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File Name'])[1]/following::span[1]")).getText(), "Date");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]")).getText(), "CANCEL");
-	    assertEquals(driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']/md-card-content[2]//div[@class='flex']/button[1]")).getText(), "SAVE");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("//div[@id='top']//h2[@class='ng-binding']")).getText(), "Credit Card Upload");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='file_upload'])[1]/following::span[1]")).getText(), "UPLOAD CREDIT CARD FILE");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='only .txt can be uploaded'])[1]/following::span[2]")).getText(), "File Name");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File Name'])[1]/following::span[1]")).getText(), "Date");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]")).getText(), "CANCEL");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']/md-card-content[2]//div[@class='flex']/button[1]")).getText(), "SAVE");
 	}
 
 	@Test
 	public void UPLOADNEWCREDITCARD() throws InterruptedException {
 		driver.get(GetBaseUrl() + "/MembershipAR/AR/NewCreditCard/Create");
 		sleep(5);
-	    assertEquals(driver.findElement(By.xpath("//div[@id='top']//h2[@class='ng-binding']")).getText(), "Credit Card Upload");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='file_upload'])[1]/following::span[1]")).getText(), "UPLOAD CREDIT CARD FILE");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Upload Credit Card File'])[1]/following::button[1]")).getText(), "SHOW EXAMPLE");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='only .txt can be uploaded'])[1]/following::span[2]")).getText(), "File Name");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File Name'])[1]/following::span[1]")).getText(), "Date");
-	    assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]")).getText(), "CANCEL");
-	    assertEquals(driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']/md-card-content[3]//div[@class='flex']/button[1]")).getText(), "SAVE");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("//div[@id='top']//h2[@class='ng-binding']")).getText(), "Credit Card Upload");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='file_upload'])[1]/following::span[1]")).getText(), "UPLOAD CREDIT CARD FILE");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Upload Credit Card File'])[1]/following::button[1]")).getText(), "SHOW EXAMPLE");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='only .txt can be uploaded'])[1]/following::span[2]")).getText(), "File Name");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File Name'])[1]/following::span[1]")).getText(), "Date");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]")).getText(), "CANCEL");
+	    AssertJUnit.assertEquals(driver.findElement(By.xpath("//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']/md-card-content[3]//div[@class='flex']/button[1]")).getText(), "SAVE");
 	}
 }
