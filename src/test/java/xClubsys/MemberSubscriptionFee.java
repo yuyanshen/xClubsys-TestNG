@@ -10,6 +10,7 @@ import io.qameta.allure.Story;
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.*;
+
 @Feature("Membership AR")
 @Owner("Pisy")
 @Stories(value = { @Story(value = "MemberSubscriptionFee") })
@@ -71,5 +72,42 @@ public class MemberSubscriptionFee extends config {
 				driver.findElement(By
 						.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Month'])[1]/following::span[1]"))
 						.getText());
+	}
+
+	@Test
+	public void MemberSubscriptionFee_PostSubscriptionFee() throws InterruptedException {
+		driver.get(GetBaseUrl() + "/MembershipAR/AR/SubscriptionFeeMember/Create");
+		sleep(5);
+		assertEquals(driver.findElement(By.xpath(
+				"(.//*[normalize-space(text()) and normalize-space(.)='Finacial Month is required.'])[1]/following::button[1]"))
+				.getText(), "SEARCH");
+		assertEquals(driver
+				.findElement(By
+						.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::span[1]"))
+				.getText(), "Member");
+		assertEquals(driver
+				.findElement(By
+						.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Member'])[1]/following::span[1]"))
+				.getText(), "Effective Date");
+		assertEquals(driver.findElement(By
+				.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Effective Date'])[1]/following::span[1]"))
+				.getText(), "Create Date");
+		assertEquals(driver
+				.findElement(By.xpath(
+						"(.//*[normalize-space(text()) and normalize-space(.)='Create Date'])[1]/following::span[1]"))
+				.getText(), "Membership Type");
+		assertEquals(driver.findElement(By.xpath(
+				"(.//*[normalize-space(text()) and normalize-space(.)='Membership Type'])[1]/following::span[1]"))
+				.getText(), "Subscription Fee Type");
+		assertEquals(driver.findElement(By.xpath(
+				"(.//*[normalize-space(text()) and normalize-space(.)='Subscription Fee Type'])[1]/following::span[1]"))
+				.getText(), "Subscription Fee");
+		assertEquals(driver
+				.findElement(By.xpath(
+						"(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]"))
+				.getText(), "Post Subscription Fee");
+		assertEquals(driver.findElement(By.xpath(
+				"(.//*[normalize-space(text()) and normalize-space(.)='Save as Draft'])[1]/following::button[1]"))
+				.getText(), "CANCEL");
 	}
 }

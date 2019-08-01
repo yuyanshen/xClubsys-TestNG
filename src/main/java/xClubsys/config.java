@@ -29,7 +29,7 @@ public class config {
 	public  String GetBaseUrl()
 	    {
 	      
-	        String configBaseUrl = "https://lab.azaas.com:10000";
+	        String configBaseUrl = "https://lab-xclubsys-uat.azurewebsites.net";
 			return configBaseUrl;
 	    } 
     private StringBuffer verificationErrors = new StringBuffer();
