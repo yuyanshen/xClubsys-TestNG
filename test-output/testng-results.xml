@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41991" started-at="2019-08-01T09:12:15Z" finished-at="2019-08-01T09:12:57Z">
+  <suite name="Default suite" duration-ms="42595" started-at="2019-08-02T07:56:26Z" finished-at="2019-08-02T07:57:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41991" started-at="2019-08-01T09:12:15Z" finished-at="2019-08-01T09:12:57Z">
-      <class name="xClubsys.StatementEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.StatementEnquiry@6c345c5f]" name="setUp" is-config="true" duration-ms="28854" started-at="2019-08-01T09:12:15Z" finished-at="2019-08-01T09:12:44Z">
+    <test name="Default test" duration-ms="42595" started-at="2019-08-02T07:56:26Z" finished-at="2019-08-02T07:57:09Z">
+      <class name="xClubsys.Reporting">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:xClubsys.Reporting@303e3593]" name="setUp" is-config="true" duration-ms="23882" started-at="2019-08-02T07:56:26Z" finished-at="2019-08-02T07:56:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="StatementEnquiry()[pri:0, instance:xClubsys.StatementEnquiry@6c345c5f]" name="StatementEnquiry" duration-ms="6132" started-at="2019-08-01T09:12:44Z" finished-at="2019-08-01T09:12:50Z">
+        <test-method status="PASS" signature="FinancialReports()[pri:0, instance:xClubsys.Reporting@303e3593]" name="FinancialReports" duration-ms="5822" started-at="2019-08-02T07:56:50Z" finished-at="2019-08-02T07:56:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StatementEnquiry -->
-        <test-method status="PASS" signature="StatementEnquiry_StatementsSetting()[pri:0, instance:xClubsys.StatementEnquiry@6c345c5f]" name="StatementEnquiry_StatementsSetting" duration-ms="6018" started-at="2019-08-01T09:12:50Z" finished-at="2019-08-01T09:12:56Z">
+        </test-method> <!-- FinancialReports -->
+        <test-method status="PASS" signature="GeneralLedgerReport()[pri:0, instance:xClubsys.Reporting@303e3593]" name="GeneralLedgerReport" duration-ms="5799" started-at="2019-08-02T07:56:56Z" finished-at="2019-08-02T07:57:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StatementEnquiry_StatementsSetting -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.StatementEnquiry@6c345c5f]" name="tearDown" is-config="true" duration-ms="751" started-at="2019-08-01T09:12:56Z" finished-at="2019-08-01T09:12:57Z">
+        </test-method> <!-- GeneralLedgerReport -->
+        <test-method status="PASS" signature="TrialBalance()[pri:0, instance:xClubsys.Reporting@303e3593]" name="TrialBalance" duration-ms="5979" started-at="2019-08-02T07:57:02Z" finished-at="2019-08-02T07:57:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TrialBalance -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:xClubsys.Reporting@303e3593]" name="tearDown" is-config="true" duration-ms="916" started-at="2019-08-02T07:57:08Z" finished-at="2019-08-02T07:57:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- xClubsys.StatementEnquiry -->
+      </class> <!-- xClubsys.Reporting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

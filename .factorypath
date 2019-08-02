@@ -19,6 +19,8 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/slf4j/slf4j-nop/1.7.2/slf4j-nop-1.7.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/testng/testng/6.14.3/testng-6.14.3.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/beust/jcommander/1.72/jcommander-1.72.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar" enabled="true" runInBatchMode="false"/>
@@ -40,7 +42,6 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/aspectj/aspectjrt/1.9.1/aspectjrt-1.9.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/jooq/joor-java-8/0.9.9/joor-java-8-0.9.9.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M3/maven-surefire-plugin-3.0.0-M3.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/maven/surefire/maven-surefire-common/3.0.0-M3/maven-surefire-common-3.0.0-M3.jar" enabled="true" runInBatchMode="false"/>
@@ -94,4 +95,8 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/mongodb-driver/3.0.4/mongodb-driver-3.0.4.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/bson/3.0.4/bson-3.0.4.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="ECLIPSE_HOME/plugins/org.testng_6.14.3.r201802240500.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="ECLIPSE_HOME/plugins/com.beust.jcommander_1.72.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="ECLIPSE_HOME/plugins/org.apache-extras.beanshell.bsh_2.0.0.b6.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="ECLIPSE_HOME/plugins/org.yaml.snakeyaml_1.17.0.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>

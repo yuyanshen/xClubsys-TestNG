@@ -21,7 +21,7 @@ public class MemberSubscriptionFee extends config {
 		sleep(8);
 		assertEquals("Member Subscription Fee List",
 				driver.findElement(By.xpath(
-						"(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]"))
+						"//div[@id='top']//h2[@class='ng-binding']"))
 						.getText());
 		assertEquals("ALL", driver.findElement(By.xpath("//md-tab-item")).getText());
 		assertEquals("DRAFT", driver.findElement(By.xpath("//md-tab-item[2]")).getText());
@@ -104,7 +104,7 @@ public class MemberSubscriptionFee extends config {
 				.getText(), "Subscription Fee");
 		assertEquals(driver
 				.findElement(By.xpath(
-						"(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]"))
+						"//div[@id='top']//h2[@class='ng-binding']"))
 				.getText(), "Post Subscription Fee");
 		assertEquals(driver.findElement(By.xpath(
 				"(.//*[normalize-space(text()) and normalize-space(.)='Save as Draft'])[1]/following::button[1]"))

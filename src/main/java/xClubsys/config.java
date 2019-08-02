@@ -81,18 +81,10 @@ public class config {
       }
     }
 
-    protected String closeAlertAndGetItsText() {
-      try {
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        if (acceptNextAlert) {
-          alert.accept();
-        } else {
-          alert.dismiss();
-        }
-        return alertText;
-      } finally {
-        acceptNextAlert = true;
-      }
-   }
+	/*
+	 * protected String closeAlertAndGetItsText() { try { Alert alert =
+	 * driver.switchTo().alert(); String alertText = alert.getText(); if
+	 * (acceptNextAlert) { alert.accept(); } else { alert.dismiss(); } return
+	 * alertText; } finally { acceptNextAlert = true; } }
+	 */
 }
