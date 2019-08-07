@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="xClubsys.Committee">
+      <class name="xClubsys.LifeConversion">
         <methods>
-          <include name="CreateCommitteeMember"/>
           <include name="tearDown"/>
+          <include name="ConvertToLifeMembership"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- xClubsys.Committee -->
+      </class> <!-- xClubsys.LifeConversion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
