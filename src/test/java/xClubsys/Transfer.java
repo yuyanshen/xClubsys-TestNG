@@ -13,7 +13,7 @@ import org.openqa.selenium.*;
 
 @Feature("Membership")
 @Owner("Pisy")
-@Stories(value = { @Story(value = "Membership") })
+@Stories(value = { @Story(value = "Transfer") })
 public class Transfer extends config {
 	@Test
 	public void MembershipTransferHistory() throws InterruptedException {

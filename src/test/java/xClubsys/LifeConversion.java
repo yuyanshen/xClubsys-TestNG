@@ -13,7 +13,7 @@ import org.openqa.selenium.*;
 
 @Feature("Membership")
 @Owner("Pisy")
-@Stories(value = { @Story(value = "Membership") })
+@Stories(value = { @Story(value = "LifeConversion") })
 public class LifeConversion extends config {
 	@Test
 	public void ConvertToLifMembership() throws InterruptedException {
@@ -53,12 +53,37 @@ public class LifeConversion extends config {
 				.getText(), "Status");
 		assertEquals(driver.findElement(By.xpath("//md-tab-item[2]")).getText(), "ELIGIBLE MEMBER");
 		assertEquals(driver.findElement(By.xpath("//div[2]/div/a")).getText(), "NEW LIFE MEMBERSHIP");
+		driver.findElement(By.xpath("//md-tab-item[2]")).click();
+		sleep(2);
+		assertEquals(driver
+				.findElement(By.xpath(
+						"(.//*[normalize-space(text()) and normalize-space(.)='Member Name'])[2]/following::span[2]"))
+				.getText(), "Member ID");
+		assertEquals(driver
+				.findElement(By.xpath(
+						"(.//*[normalize-space(text()) and normalize-space(.)='Member ID'])[2]/following::th[1]"))
+				.getText(), "Name");
+		assertEquals(driver
+				.findElement(
+						By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/following::span[1]"))
+				.getText(), "DOB");
+		assertEquals(driver
+				.findElement(
+						By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='DOB'])[1]/following::span[1]"))
+				.getText(), "Duration (Months)");
+		assertEquals(driver.findElement(By.xpath(
+				"(.//*[normalize-space(text()) and normalize-space(.)='Duration (Months)'])[1]/following::span[1]"))
+				.getText(), "Outstanding Balance");
+		assertEquals(driver.findElement(By.xpath(
+				"(.//*[normalize-space(text()) and normalize-space(.)='Outstanding Balance'])[1]/following::span[1]"))
+				.getText(), "Effective Date");
 	}
+
 	@Test
 	public void ConvertToLifeMembership() throws InterruptedException {
 		driver.get(GetBaseUrl() + "/Membership/Members/ConvertMembership/Create");
 		sleep(5);
-		
+
 		assertEquals(driver.findElement(By.xpath(
 				"(.//*[normalize-space(text()) and normalize-space(.)='Membership Type is required.'])[1]/following::span[1]"))
 				.getText(), "Transaction");

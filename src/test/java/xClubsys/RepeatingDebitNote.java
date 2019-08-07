@@ -14,6 +14,7 @@ import io.qameta.allure.Story;
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.*;
+
 @Feature("Membership AR")
 @Owner("Pisy")
 @Stories(value = { @Story(value = "RepeatingDebitNote") })
@@ -27,9 +28,7 @@ public class RepeatingDebitNote extends config {
 				.click();
 		Thread.sleep(5000);
 		AssertJUnit.assertEquals("Repeating Debit Note List",
-				driver.findElement(By.xpath(
-						"(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]"))
-						.getText());
+				driver.findElement(By.xpath("//div[@id='top']//h2[@class='ng-binding']")).getText());
 		AssertJUnit.assertEquals("Member", driver.findElement(By.xpath(
 				"(.//*[normalize-space(text()) and normalize-space(.)='Repeating Debit Note List'])[1]/following::span[2]"))
 				.getText());
@@ -74,10 +73,9 @@ public class RepeatingDebitNote extends config {
 
 	@Test
 	public void RepeatingDebitNote_NewRepeatingDebitNote() throws InterruptedException {
+		driver.get(GetBaseUrl() + "/MembershipAR/AR/RepeatingInvoice/Create");
 		AssertJUnit.assertEquals("New Repeating Debit Note",
-				driver.findElement(By.xpath(
-						"(.//*[normalize-space(text()) and normalize-space(.)='Membership'])[1]/following::h2[1]"))
-						.getText());
+				driver.findElement(By.xpath("//div[@id='top']//h2[@class='ng-binding']")).getText());
 		AssertJUnit.assertEquals("SAVE arrow_drop_down",
 				driver.findElement(By.xpath(
 						"(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/following::button[1]"))
