@@ -120,7 +120,7 @@ public class Reminder extends config {
 						"(.//*[normalize-space(text()) and normalize-space(.)='Membership AR'])[2]/following::h2[1]"))
 						.getText());
 		assertEquals("SAVE", driver.findElement(By.xpath(
-				"(.//*[normalize-space(text()) and normalize-space(.)='DDeactivate Card Transaction'])[1]/following::button[1]"))
+				"//div[@id='main']/div[1]/div//form[@name='form1']/md-card[@class='_md']//div[@class='flex']/button[1]"))
 				.getText());
 		assertEquals("CANCEL",
 				driver.findElement(By
